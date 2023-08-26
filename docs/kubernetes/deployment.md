@@ -118,7 +118,11 @@ spec:
         - name: root
           hostPath:
             path: /
- ```           
+ ```
 
 
 ### 资源清单的讲解
+
+
+
+![demo](./images/demo.gif)
