@@ -228,3 +228,13 @@ GitHub Actions 官方文档 https://docs.github.com/en/actions (opens new window
 GitHub Actions 官方插件市场https://github.com/marketplace?type=actions (opens new window)。
 
 awesome-actions https://github.com/sdras/awesome-actions (opens new window)。
+
+
+
+
+
+
+网友博客参考: 
+```shell
+https://somenzz.gitee.io/auto-deploy-blog-by-github-actions.html#_2%E3%80%81secrets-gitee-rsa-private-key
+```
