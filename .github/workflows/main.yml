@@ -17,7 +17,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-
+      # 执行 ls -l 命令
+      - name: List files
+        run: ls -l
       # 5、部署到 somenzz.cn 服务器
       - name: rsync deployments
         uses: burnett01/rsync-deployments@4.1
