@@ -12,21 +12,28 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
-      # 拉取代码
+
+      # 1、拉取代码
       - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+
+      # 2、生成静态文件
+      - name: Build
+        run: npm install && npm run build
+          
       # 执行 ls -l 命令
       - name: List files
         run: ls -l  && pwd
-      # 5、部署到 somenzz.cn 服务器
+        
+      # 3、部署到 somenzz.cn 服务器
       - name: rsync deployments
         uses: burnett01/rsync-deployments@4.1
         with:
           # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
-          switches: -avzh
-          path: ./
+          switches: -avzh  --delete
+          path: ./build/
           remote_path: /apps/liteshell/
           remote_host: www.zlqit.com
           remote_port: 51888
