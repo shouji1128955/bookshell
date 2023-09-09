@@ -19,7 +19,7 @@ root@k8s-master:~/tekton/demo/pipline-sidecar#
 
 demo-rescource.yaml
 
-```shell
+```yaml
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
@@ -46,7 +46,7 @@ spec:
 
 
 pipelinerun.yaml
-```shell
+```yaml
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
@@ -73,7 +73,7 @@ spec:
 
 
 pipeline.yaml
-```shell
+```yaml
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
@@ -152,7 +152,7 @@ spec:
 
 
 sa.yaml
-```shell
+```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -164,7 +164,7 @@ secrets:
 
 
 secret_docker.yaml
-```shell
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -179,7 +179,7 @@ stringData:
 
 
 secret.yaml
-```shell
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -198,7 +198,7 @@ stringData:
 
 task-docker-build-push.yaml
 
-```shell
+```yaml
 # task-build-push.yaml
 apiVersion: tekton.dev/v1beta1
 kind: Task
@@ -318,7 +318,7 @@ spec:
 
 
 task-generate-build-id.yaml
-```shell
+```yaml
 # generate-build-id.yaml
 apiVersion: tekton.dev/v1beta1
 kind: Task
@@ -369,7 +369,7 @@ spec:
 
 
 task-pull-code.yaml
-```shell
+```yaml
 # task-test.yaml
 apiVersion: tekton.dev/v1beta1
 kind: Task
