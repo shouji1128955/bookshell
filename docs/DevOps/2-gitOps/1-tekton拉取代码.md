@@ -4,7 +4,7 @@
 
 
 
-## 1、介绍
+## 1、Tekton代码拉取实现
 
 Tekton 的前身是 Knative 的子项目 build-pipeline，主要用来给 Kantive 的 build 模块增加 pipeline 功能。之后独立出来，Tekton 的目标是一个通用的 CI/CD 工具。这是一种常见的产品孵化机制。
 
