@@ -370,3 +370,55 @@ kubectl  apply   -f pipelinerun.yaml
 所有修改完成后，重新执行我们的整个流水线即可
 
 tkn pipelinerun logs test-pipelinerun
+
+
+
+
+
+
+## 案例 使用results实现 commit
+
+
+此处，通过定义commit来实现在docker build的时候来通过commit来实现部署
+
+#### 获取commit信息
+
+这一步需要在clone代码的时候就需要获取到，具体的yaml可以参考官方文档，然后进行修改即可
+https://hub.tekton.dev/tekton/task/git-clone 
+
+
+
+![image-20230917190859202](images/image-20230917190859202.png)
+
+
+
+#### pipeline中获取commit信息
+
+
+
+因为在pipeline中，通过task来定义每个task执行的部分，下面是拉取代码的task ,然后在pipeline中命名为clone ,关联了git-clone的任务。所以如果想要获取commit信息，需要从clone中获取变量信息
+
+
+
+![image-20230917191253053](images/image-20230917191253053.png)
+
+
+
+
+
+然后在pipeline中需要把变量注入进去，需要定义，然后关联的任务为docker ,  方式如下。
+
+
+
+![image-20230917191754527](images/image-20230917191754527.png)
+
+
+
+在task-docker中添加注入的变量
+
+![image-20230917191956662](images/image-20230917191956662.png)
+
+
+
+
+
