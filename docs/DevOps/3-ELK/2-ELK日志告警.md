@@ -180,6 +180,39 @@ docker run -d  -v ./elastalert-master:/opt/elastalert-master --name elastalert-t
 
 
 
+### 2.3、清理elastalert相关状态信息
+
+需要清理es中中索引的文档数据，方式如下： 
+
+```shell
+
+清理 elastalert_status_status
+POST elastalert_status_status/_delete_by_query
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+清理elastalert_status
+POST elastalert_status/_delete_by_query
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+清理elastalert_status_silence
+POST elastalert_status_silence/_delete_by_query
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+```
+
+
 ## 3、kibana安装
 
 ```shell
