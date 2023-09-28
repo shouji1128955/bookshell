@@ -6,4 +6,4 @@ import Link from "@docusaurus/Link";
 
 # Tutorial Intro
 
-- <Link to="/docs/tutorial-basics/create-a-page">Js</Link>
+- <Link to="/docs/kubernetes/affinity">Js</Link>
