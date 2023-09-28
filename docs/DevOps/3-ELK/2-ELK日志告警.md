@@ -513,3 +513,15 @@ https://blog.csdn.net/lihaipeng0417/article/details/118340478
 
 
 
+##6、header部署
+
+
+```shell
+
+sudo docker run -d \
+  --name=elasticsearch-head \
+  --restart=always \
+  -p 9500:9100 \
+  registry.cn-hangzhou.aliyuncs.com/zlq_registry/elasticsearch-head:5-alpine
+  
+```
