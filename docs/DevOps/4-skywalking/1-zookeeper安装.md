@@ -1,7 +1,4 @@
 
-
-
-
 ## 1、zookeeper安装
 
 采用高可用方案安装
@@ -33,11 +30,8 @@ cd /data/devops/skywalking/zookeeper
 
 ```shell
 [root@110 zookeeper]# cat /etc/hosts
-127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 nacos30097_nacos1_1
-::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-192.168.1.203 qtreg.qtlocal.atme.top
-10.51.8.110  nacos1
-##在下面添加解析
+#...
+##参考添加ip解析
 10.51.8.110  zoo1
 10.51.8.112  zoo2
 10.51.8.113  zoo3
@@ -240,10 +234,9 @@ root@zoo1:/apache-zookeeper-3.9.0-bin#
 
 这里我使用haproxy 
 
-参考配置
-
+参考配置，替换为实际的地址
 ```shell
-listen vnc_server   #k8s远程地址
+listen zk_server
     bind 0.0.0.0:12181
     mode tcp
     server s1 10.51.8.110:2181  check fall 3 rise 5 inter 2000 weight 1

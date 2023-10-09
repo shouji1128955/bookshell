@@ -502,12 +502,6 @@ output {
 |2023-08-29 19:04:31.550|ERROR |gateway-next-prod|/food-match03/meal/v3/api/recipes/detail|POST|338bdfaea1fe408992c1421a888ef391|606ffc2e837fee6eca5c1ed0|接口调用记录 mq 消息发送：{"appId":"606ffc2e837fee6eca5c1ed0","bizType":"020501","developerId":"606ffc2e837fee6eca5c1ed1","interfaceCode":"020501","interfaceUrl":"/food-match/meal/v3/api/recipes/detail?bizType=020501","invokeDate":"2023-08-24","invokeStatus":"1","invokeTime":"2023-08-24 16:39:31","sn":"338bdfaea1fe408992c142","timeLength":147}|
 ```
 
-
-
-
-
-
-
 告警优化
 https://blog.csdn.net/lihaipeng0417/article/details/118340478
 
@@ -523,5 +517,5 @@ sudo docker run -d \
   --restart=always \
   -p 9500:9100 \
   registry.cn-hangzhou.aliyuncs.com/zlq_registry/elasticsearch-head:5-alpine
-  
+
 ```
