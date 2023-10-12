@@ -86,7 +86,6 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/Golang', label: 'Golang', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
