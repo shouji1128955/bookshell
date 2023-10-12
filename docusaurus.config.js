@@ -53,7 +53,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
 		  //showLastUpdateAuthor: true, 
           showLastUpdateTime: true,
-        },
+        },   
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -76,7 +76,7 @@ const config = {
       navbar: {
         title: 'LiteShell',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'LiteShell',
           src: 'img/logo.svg',
         },
         items: [
@@ -86,6 +86,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/Golang', label: 'Golang', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
