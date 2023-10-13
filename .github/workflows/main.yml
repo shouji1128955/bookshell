@@ -19,6 +19,12 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Checkout Repo 2
+        uses: actions/checkout@v2
+        with:
+          repository: owner2/repo2
+          ref: main          
+      
       # 2、生成静态文件
       - name: Build
         run: |
