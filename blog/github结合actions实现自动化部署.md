@@ -234,7 +234,11 @@ awesome-actions https://github.com/sdras/awesome-actions (opens new window)。
 
 
 
+
+
 网友博客参考: 
 ```shell
 https://somenzz.gitee.io/auto-deploy-blog-by-github-actions.html#_2%E3%80%81secrets-gitee-rsa-private-key
 ```
+蚂蚁大象博客
+https://blog.ljbmxsm.com/docs/others/blog-building/
