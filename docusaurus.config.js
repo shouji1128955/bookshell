@@ -80,13 +80,129 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          {
+            label: 'Sre',
+            position: 'left',
+            items: [
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'SreOper',   //这个名称最好是英文
+                    to: '/docs/Sre/1-日常运维',
+                    label: '日常运维',
+                },
+                {
+                  type: 'docSidebar',
+                  sidebarId: 'SreMiddleSoft',   //这个名称最好是英文
+                  to: '/docs/Sre/2-中间件',
+                  label: '中间件',
+              },                             
+            ]
+        }, 
+
+
+        {
+          label: 'Kubernetes',
+          position: 'left',
+          items: [
+              {
+                  type: 'docSidebar',
+                  sidebarId: 'Kubernetes',   //这个名称最好是英文
+                  to: '/docs/Kubernetes',
+                  label: 'Kubernetes',
+              },                               
+          ]
+      },  
+
+
+      {
+        label: 'Prometheus',
+        position: 'left',
+        items: [
+            {
+                type: 'docSidebar',
+                sidebarId: 'PrometheusGrafana',   //这个名称最好是英文
+                to: '/docs/Prometheus/grafana',
+                label: 'grafana',
+            },
+            {
+                type: 'docSidebar',
+                sidebarId: 'PrometheusServer',
+                to: '/docs/Prometheus/prometheus',
+                label: 'Prometheus',
+            },
+            {
+                type: 'docSidebar',
+                sidebarId: 'PrometheusAlert',
+                to: '/docs/Prometheus/alertManager',
+                label: 'AlertManager',
+          },                               
+        ]
+    },
+    
+    {
+      label: 'DevOps',
+      position: 'left',
+      items: [
+          {
+              type: 'docSidebar',
+              sidebarId: 'DevOpsJenkins',   //这个名称最好是英文
+              to: '/docs/DevOps/1-jenkins',
+              label: 'jenkins',
+          },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            sidebarId: 'DevOpsGitOps',   //这个名称最好是英文
+            to: '/docs/DevOps/2-gitOps',
+            label: 'gitOps',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'DevOpsElk',   //这个名称最好是英文
+            to: '/docs/DevOps/3-ELK',
+            label: 'ELK',
+          },  
+          {
+            type: 'docSidebar',
+            sidebarId: 'DevOpsSkywalking',   //这个名称最好是英文
+            to: '/docs/DevOps/4-skywalking',
+            label: 'skywalking',
+          },                                          
+      ]
+  },                           
+          {
+            label: 'Golang',
+            position: 'left',
+            items: [
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'GoalngJichu',   //这个名称最好是英文
+                    to: '/docs/Golang/golang基础',
+                    label: 'golang基础',
+                },
+                {
+                  type: 'docSidebar',
+                  sidebarId: 'GoalngJinjie',   //这个名称最好是英文
+                  to: '/docs/Golang/golang进阶',
+                  label: 'golang进阶',
+              },
+                {
+                type: 'docSidebar',
+                sidebarId: 'GoalngOper',   //这个名称最好是英文
+                to: '/docs/Golang/golang运维',
+                label: 'golang运维',
+              },                              
+            ]
+        },          
+          {to: '/blog',
+           label: 'Blog',
+          position: 'left'
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
