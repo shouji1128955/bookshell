@@ -1,15 +1,4 @@
 
-本文档最后更新时间：{customTime}
----
-id: my-document
-title: 我的文档
-lastUpdatedBy: $docs.lastUpdateAuthor
-lastUpdatedAt: 
----
-
-{$page.lastUpdatedAt} by {$page.lastUpdateAuthor}
-
-
 npm 安装指定阿里云
 >npm install --save @docusaurus/plugin-content-docs  --registry=https://registry.npmmirror.com
 
