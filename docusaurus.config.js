@@ -218,8 +218,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/kubernetes/affinity',
+                label: 'LiteShell',
+                href: 'https://book.zlqit.com'
               },
             ],
           },
