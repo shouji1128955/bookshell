@@ -33,8 +33,6 @@ kjubectl  apply  -f  https://raw.githubusercontent.com/shouji1128955/bookcode/ma
 
 
 
-
-
 然后需要对service进行修改为nodePort 方式进行访问
 
 ```shell
