@@ -5,9 +5,59 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: Regular;
+  src: url(/assets/fonts/Inter.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url(/assets/fonts/Inter-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: fallback;
+  src: url(/assets/fonts/PlusJakartaSans-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: fallback;
+  src: url(/assets/fonts/PlusJakartaSans-italic.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(/assets/fonts/FiraCode.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
 
 :root {
-  --ifm-font-family-monospace: "Fira Code VF",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --ifm-font-family-monospace: "Fira Code VF";
   --ifm-color-primary: #2160fd;
   --ifm-color-primary-dark: #1959fc;
   --ifm-color-primary-darker: #0f51f8;
@@ -15,15 +65,15 @@
   --ifm-color-primary-light: #3d72f8;
   --ifm-color-primary-lighter: #477af8;
   --ifm-color-primary-lightest: #6791fc;
-  --ifm-code-font-size: 110%;
+  --ifm-code-font-size: 95%;
   --ifm-code-border-radius: 10px;
   --ifm-pre-padding: 10px;
-  --docusaurus-highlighted-code-line-bg: rgba(147,178,244,.38);
- 
+  --docusaurus-highlighted-code-line-bg: rgba(33,96,253,.16);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
+  --ifm-font-family-monospace: "Fira Code VF";  
   --ifm-color-primary: #2160fd;
   --ifm-color-primary-dark: #1959fc;
   --ifm-color-primary-darker: #0f51f8;
@@ -31,7 +81,7 @@
   --ifm-color-primary-light: #3d72f8;
   --ifm-color-primary-lighter: #477af8;
   --ifm-color-primary-lightest: #6791fc;
-  --docusaurus-highlighted-code-line-bg: rgba(147,178,244,.38);
+  --docusaurus-highlighted-code-line-bg: rgba(33,96,253,.16);
 }
 
 pre code {
