@@ -11,6 +11,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
   title: 'LiteShell',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
@@ -29,12 +30,28 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  //配置搜索的部分
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The is recommended to set to:
+        language: ["en", "zh"],
+      },
+    ],
+  ],
+
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN',
+    locales: [ "zh-CN", 'en'],
   },
 
   // ...
@@ -80,6 +97,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+         /* 多语言下拉框部分
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          */
           // {
           //   type: 'doc',
           //   docId: 'intro',
@@ -278,6 +301,9 @@ const config = {
             line: 'highlight-next-line-error',
           },
         ],
+
+        //设置默认语言
+        defaultLanguage: 'shell',
       },
     }),
 };

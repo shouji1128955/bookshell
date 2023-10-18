@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbookshell=self.webpackChunkbookshell||[]).push([[2535],{45641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"GitHub Actions\u5165\u95e8\u6559\u7a0b","permalink":"/en/blog/long-blog-post"}]}')}}]);
