@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbookshell=self.webpackChunkbookshell||[]).push([[1713],{53457:s=>{s.exports=JSON.parse('[{"label":"action","permalink":"/blog/tags/action","count":1},{"label":"docusaurus","permalink":"/blog/tags/docusaurus","count":1}]')}}]);
