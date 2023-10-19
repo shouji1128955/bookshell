@@ -1,10 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const code_themes = {
-  light: require('prism-react-renderer/themes/github'),
-  dark: require('prism-react-renderer/themes/vsDark'),
-};
+//const code_themes = {
+//  light: require('prism-react-renderer/themes/github'),
+//  dark: require('prism-react-renderer/themes/vsDark'),
+//};
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -63,6 +63,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+		  sidebarCollapsed: true,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -86,10 +87,17 @@ const config = {
   ],
 
   themeConfig:
+  
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },	  
+      image: 'img/docusaurus-social-card.jpg',     
       navbar: {
         title: 'LiteShell',
         logo: {
@@ -278,8 +286,8 @@ const config = {
       },
 
       prism: {
-        theme: code_themes.light,
-        darkTheme: code_themes.dark,
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
         additionalLanguages: [
           'dart',
           'ruby',
@@ -288,6 +296,7 @@ const config = {
           'java',
           'swift',
           'objectivec',
+		  'go',
           
         ],
         magicComments: [
