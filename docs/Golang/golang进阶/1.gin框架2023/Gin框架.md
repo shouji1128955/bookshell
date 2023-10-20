@@ -265,6 +265,8 @@ func main() {
 
 ```go
 // 书籍相关的路由
+r := gin.Default()
+
 bookRoute := r.Group("/books")
 {
   bookRoute.GET("/", GetBook)
@@ -281,6 +283,8 @@ publishRoute := r.Group("/publish")
 	publishRoute.GET("/edit",EditPublish)
 	publishRoute.GET("/delete",DeletePublish)
 }
+r.Run(":8080")
+
 
 ```
 
