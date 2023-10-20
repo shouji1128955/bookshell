@@ -84,17 +84,19 @@
   --docusaurus-highlighted-code-line-bg: rgba(33,96,253,.16);
 }
 
-pre code {
+ pre code {
   background-color: initial;
   border: 3px;
 
 }
-/* .codeBlock_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module{
+ 
+.codeBlock_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module{
   border: 2px solid #dadde1;
-} */
-pre.prism-code {
+} 
+ pre.prism-code {
   border: 1px solid #dadde1;
 }
+
 .menu__link--active:not(.menu__link--sublist){
   background: rgba(33,96,253,.16);
 }
