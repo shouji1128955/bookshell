@@ -227,7 +227,13 @@ const config = {
                 sidebarId: 'GoalngOper',   //这个名称最好是英文
                 to: '/docs/Golang/golang运维',
                 label: 'golang运维',
-              },                              
+              },     
+                 {
+                type: 'docSidebar',
+                sidebarId: 'GoalngVue',   //这个名称最好是英文
+                to: '/docs/Golang/VUE',
+                label: 'Vue',
+              },                           
             ]
         },          
           {to: '/blog',

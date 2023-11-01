@@ -70,10 +70,9 @@ mounted(): 表示页面加载完成后自动执行的命令
 
 
 
+js字符串反转的几种方式
 
-#### js字符串反转的几种方式
-
-#### 第一种：
+1. 第一种：
 
 **字符串转数组，反转数组，数组转字符串。**
 
@@ -89,7 +88,7 @@ let newStr = str.split("").reverse().join("");
 console.log(newStr);
 ```
 
-#### 第二种：
+2. 第二种：
 
 **使用遍历以及api `charAt()`**
 
@@ -927,7 +926,897 @@ vm.$data.message="change string 2"
 
 
 
+## watch监听器
 
 
 
+监听当一个值发生改变时，然后进行重新渲染
+
+
+
+方式1 
+
+```html
+  const App = Vue.createApp({
+    data() {
+      return {
+        message: '<strong> hello, world </strong>',
+        count: 2,
+        price: 5,
+        newTotal: 10 ,
+      }
+    },
+    watch: {
+          //price 发生变化时，函数会执行
+          price(current, oldvalue) { //其中price表示监听的变量为5
+            console.log('正在打印')
+            console.log(current,oldvalue)
+            this.newTotal = current * this.count
+          }
+    },
+
+    template: `
+   <div >
+    {{newTotal}}
+  </div>`
+```
+
+其中price表示监听的变量为5，这个值发生改变的时候，在console中执行vm.$data.price=x,然后将进行重新计算，并且将重新计算后的结构同步到newTotal中
+
+
+
+
+
+方式2 通过计算属性computed来完成，同样的，因为当在console中执行vm.$data.price=x时， computed中的total方法也会重新计算，将结果输入到 newTotal中，页面中也会进行重现加载展示新值
+
+有个问题就是主要缓存问题，比如单纯如何watch时间戳，没有依赖其他值的时候，这个时候不会执行页面重现渲染
+
+```html
+  const App = Vue.createApp({
+    data() {
+      return {
+        message: '<strong> hello, world </strong>',
+        count: 2,
+        price: 5,
+        newTotal: 10 ,
+      }
+    },
+computed: {
+      total() {
+        // return Date.now() + this.count;  //时间计算问题-当计算属性依赖的内容发生变更时，才会重新执行计算
+        // return Date.now()  
+         return  this.count * this.price  //也可以通过这种方式来监听
+      }
+    },
+
+
+    template: `
+   <div >
+    {{newTotal}}
+  </div>`
+
+```
+
+
+
+总结:
+
+1.computed和methmod都能实现的一个功能，建议使用computed,因为有缓存
+
+2.computed和watch 都能实现的功能，建议使用computed因为更加简洁
+
+
+
+## 样式绑定语法
+
+需要定义
+
+```html
+<style>
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+</style>
+```
+
+
+
+定义颜色可以通过字符串变量，对象，数组来实现，但是这里也可以使用原生的css来定义
+
+颜色当然可以继承组件的
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+        classString: 'red',
+        classObject: {red: false, green: true},
+        classArray: ['red','green',{brown: false}],
+      }
+    },
+ 
+    template: `<div :class="classArray">
+       hello, world 
+      <demo />   <!----//demo是被调用的，我们称之为子组件--->
+      </div>`
+,
+
+  })
+
+    //注册一个组件
+    App.component('demo',{
+      template: `
+      <!---div style="color: red"--->
+      <div :class="$attrs.class">  <!---跟父级颜色一样--->
+        one
+      </div>
+      <div class="red">
+        two
+      </div>     
+      `
+    })
+
+  const vm = App.mount('#root')
+</script>
+```
+
+
+
+注意: 
+
+```html
+<div :class="$attrs.class">  
+```
+
+
+
+## if-else条件判断
+
+
+
+详情如下：
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+        show: false,
+        conditionOne: false,
+        conditionTwo: true,
+      }
+    },
+
+    //如果是false，展示if if if if，如果是v-else-if 则展示 elseif，否则展示else
+ 
+    template: `<div>
+
+           <div  v-if="show">hello,world</div>
+
+
+
+           <div  v-if="conditionOne">if if if if</div>
+           <div  v-else-if="conditionTwo">elseif</div>
+           <div v-else>else </div>
+
+      </div>`
+
+,
+
+  })
+
+const vm = App.mount('#root')
+```
+
+
+
+在上面的展示中，我们也可以通过v-if 或者 v-else-if 这样的组合条件来实现逻辑的选择
+
+
+
+
+
+## 列表循环
+
+
+
+注意，在列表循环的时候，vue为了提升性能，对于之前列表中存在的数据就不需要重新渲染，只需要在index新增的数据进行渲染
+
+可以使用一个 :key="item"
+
+![image-20231101205436378](images/image-20231101205436378.png)
+
+
+
+
+
+
+
+示例代码如下
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+         listArray: ['ilync','22','teacher'],
+         listobject: {
+            name: 'ilync',
+            age: '28',
+            email: 'ilync@zlqit.cn'
+         }
+      }
+    },
+  
+
+    methods: {
+      handerClick(){
+        //使用数组的变更函数 push,shift,unshift, splice,sort,reverse
+        //this.listArray.push('hello')    //从最后增加
+        //this.listArray.pop()            //从后往前删除
+        //this.listArray.shift()          //从前往后删
+        //this.listArray.unshift('hello')   //从前往后增加
+        //this.listArray.reverse()            //最前面和最后一个互换
+      }
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template: `<div>
+          <h3>循环list表</h3>
+              <div v-for="(item,index) in listArray" :key="item"> 
+            {{ item }} -- {{ index }}   <!---list循环----->
+            </div>
+
+            <button v-on:click="handerClick">增加</button>
+
+
+           <br>
+           <h3>循环object表</h3>
+           <div v-for="(value,key,index) in listobject"> {{value}} --- {{key}} -- {{index}} </div>
+
+           <br> 
+
+      </div>`
+,
+  })
+
+  const vm = App.mount('#root')
+```
+
+
+
+对于这些方法需要研究
+
+        //this.listArray.push('hello')    //从最后增加
+        //this.listArray.pop()            //从后往前删除
+        //this.listArray.shift()          //从前往后删
+        //this.listArray.unshift('hello')   //从前往后增加
+        //this.listArray.reverse()            //最前面和最后一个互换
+
+
+
+
+v-for跟v-if在同一个dev中无法同时兼容，所以可以在v-for的dev下在创建一个dev,然后在子的dev中定义，但是这样引来一个问题，就是多了一次dev,本身就是应该在一层显示，为了解决这个问题。这里用到了template占位符，来解决这个问题
+
+
+
+
+
+![image-20231101212708632](images/image-20231101212708632.png)
+
+部分代码参考
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+         listArray: ['ilync','22','teacher'],
+         listobject: {
+            name: 'ilync',
+            age: '28',
+            email: 'ilync@zlqit.cn',
+         }
+      }
+    },
+  
+    methods: {
+      handerClick(){
+        //使用数组的变更函数 push,shift,unshift, splice,sort,reverse
+        //this.listArray.push('hello')    //从最后增加
+        //this.listArray.pop()            //从后往前删除
+        //this.listArray.shift()          //从前往后删
+        //this.listArray.unshift('hello')   //从前往后增加
+        //this.listArray.reverse()            //最前面和最后一个互换
+         
+        //1. 直接替换数组
+        //this.listArray = ['byte','world']
+        
+
+        //2.更新数组的内容
+       // this.listArray[1] = 'hello'
+
+      },
+
+      hanleAddBtnClick(){
+        //3.直接添加对象的内容，也可以自动的展示出来---此处有问题，我验证没有通过
+         this.listObject.age="20";
+         this.listObject.address="甘肃";
+      }
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template: `<div>
+
+      <h3>循环list表</h3>
+              <div v-for="(item,index) in listArray" :key="item"> 
+            {{ item }} -- {{ index }}   <!---list循环----->
+            </div>
+
+            <button v-on:click="handerClick">增加</button>
+
+           <br>
+           <h3>循环object表</h3>
+           <div v-for="(value,key,index) in listobject" :key="index"> {{value}} --- {{key}} </div>
+           <button @click="hanleAddBtnClick">新增</button>
+           <br> 
+
+      </div>`
+,
+  })
+
+  const vm = App.mount('#root')
+```
+
+
+
+
+
+## 事件绑定
+
+同时传递变量和event方法
+
+实例代码
+
+```html
+    data() {
+      return {
+              counter: 0
+         }
+      },
+  
+    methods: {
+      handleBtnClick(num, event){
+        console.log(event);
+        this.counter += num;
+      }
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template: `<div>
+          {{counter}}
+          <button @click="handleBtnClick(2,$event)"> button</button>
+          </div>`
+```
+
+
+
+![image-20231101215528551](images/image-20231101215528551.png)
+
+
+
+
+
+
+
+
+
+click传递多个方法
+
+```html
+    methods: {
+      handleBtnClick(num, event){
+        console.log(event);
+        this.counter += num;
+        alert("hellow01")
+      },
+
+
+      handleBtnClick2(num, event){
+        console.log(event);
+        this.counter += num;
+        alert("hellow02")
+      }
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template: `<div>
+          {{counter}}
+          <button @click="handleBtnClick(2,$event),handleBtnClick2(4,$event)"> button</button>
+          </div>`
+```
+
+
+
+重点在于： @click="handleBtnClick(2,$event),handleBtnClick2(4,$event)"
+
+
+
+修饰符 -重要
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+              counter: 0
+         }
+      },
+  
+    methods: {
+      handleDivClick(){
+        alert('div clicked')
+      },
+      handleBtinClick3(){
+        this.counter += 1;
+      }
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template:  `<div>
+          <!------
+          {{counter}}
+          <button @click="handleBtnClick(2,$event),handleBtnClick2(4,$event)"> button</button>
+          ---------->
+
+          <div @click="handleDivClick">
+            {{counter}}
+            <button @click="handleBtinClick3">button</button>
+            </div>
+
+          </div>` 
+  });
+
+  const vm = App.mount('#root')
+</script>
+```
+
+因为有个连锁反应，在点击handleBtinClick3之后，会连带触发 handleDivClick ，所以解决这个问题，需要用到下面的代码
+
+```html
+    template:  `<div>
+          <!------
+          {{counter}}
+          <button @click="handleBtnClick(2,$event),handleBtnClick2(4,$event)"> button</button>
+          ---------->
+
+          <div @click.self="handleDivClick">
+            {{counter}}
+            <button @click="handleBtinClick3">button</button>
+            </div>
+
+          </div>` 
+```
+
+
+
+添加一个@click.self 就能解决这个问题，如果这个事件不是自己触发的，就不会执行，这个因为是button触发的。所以就不会在有连锁反应
+
+
+
+![](./images/image-20231101215528552.gif)
+
+常见的修饰符还有以下： 
+
+
+
+事件修饰符:stop,prevent(阻止默认行为的),capture(绑定按照冒泡的方式),self,once(点击事件只执行一次),passive
+按键修饰符:enter,tab,delete,esc,up,down,letft, right  --> 当按下键盘的时候做响应
+鼠标修饰符:left,  right,  middle
+精确修饰符:exact
+
+
+
+案例： 当按下enter就提示信息
+
+```html
+    methods: {
+      handleKeyDown(){
+        alert("你按下了回车键")
+      }
+    },  
+
+template:  `<div> 
+           <br> 
+          <h3> 按键修饰符</h3>
+          <div> <input @keydown.enter="handleKeyDown"/> </div>
+          </div>`  
+```
+
+
+
+
+
+
+
+
+
+## 表单中的双向绑定
+
+
+
+**在输入框中是使用双向绑定**
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+              message: 'hello'
+         }
+      },
+  
+    methods: {
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template:  `<div>
+          <div> {{message}} <input v-model="message"/> </div>
+          </div>`
+  });
+
+  const vm = App.mount('#root')
+```
+
+
+
+**在textarea中使用双向绑定**
+
+```html
+    template:  `<div>
+          <div> {{message}} <input v-model="message"/> </div>
+
+          <br>
+          <br>
+          <h3> textarea中使用双向绑定</h3> 
+          <textarea v-model="message">
+          </div>`
+  });
+```
+
+
+
+**在checkbox中使用**
+
+有两种，第一种就是true或者false ,第二种就是通过数组的方式
+
+![image-20231101223702621](images/image-20231101223702621.png)
+
+```htmml
+     data() {
+      return {
+              message: false
+         }
+      },
+ template:  `<div>
+          <div> {{message}} <input v-model="message"/> </div>
+
+          <br>
+          <br>
+          <h3> textarea中使用双向绑定</h3> 
+          <textarea v-model="message"/>
+
+          <br>
+          <h3>checkbox用法</h3> 
+          {{message}}
+          jack  <input type=checkbox  v-model="message" value="jack" /> 
+     
+          </div>`
+```
+
+
+
+第二种
+
+定义为一个数组
+
+![image-20231101223802007](images/image-20231101223802007.png)
+
+```html
+    data() {
+      return {
+              message: [] //定义
+         }
+      },
+  
+    methods: {
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template:  `<div>
+          <div> {{message}} <input v-model="message"/> </div>
+
+          <br>
+          <br>
+          <h3> textarea中使用双向绑定</h3> 
+          <textarea v-model="message"/>
+
+          <br>
+          <h3>checkbox用法</h3> 
+          {{message}}
+          jack  <input type=checkbox  v-model="message" value="jack" /> 
+          dell  <input type=checkbox  v-model="message" value="dell" /> 
+          lee   <input type=checkbox  v-model="message" value="lee" /> 
+          </div>
+```
+
+
+
+radio中使用
+
+由于radio只能单选，不像checkbox， 所以radio定义为一个字符串即可
+
+![image-20231101224422904](images/image-20231101224422904.png)
+
+
+
+```html
+const App = Vue.createApp({
+    data() {
+      return {
+              message: ''
+         }
+      },
+  
+    methods: {
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template:  `<div>
+          <div> {{message}} <input v-model="message"/> </div>
+          <h3>radio用法</h3> 
+          {{message}}
+          jack  <input type=radio v-model="message" value="jack" /> 
+          dell  <input type=radio  v-model="message" value="dell" /> 
+          lee   <input type=radio  v-model="message" value="lee" /> 
+          </div>`
+
+  });
+```
+
+
+
+select选择用法
+
+![image-20231101225724208](images/image-20231101225724208.png)
+
+
+
+
+
+```html
+    data() {
+      return {
+              message: '',
+              messageSelect: ''
+         }
+      },
+
+<div>
+            {{messageSelect}}
+          <select v-model="messageSelect">
+           <option disabled value='' > 请选择内容 </option>
+           <option value='A' > A </option>
+           <option value='B' > B </option>
+           <option value='C' > C </option>
+          </select>
+             </div>
+```
+
+
+
+select多选择
+
+
+
+
+
+![image-20231101230334886](images/image-20231101230334886.png)
+
+
+
+
+
+
+
+```html
+  const App = Vue.createApp({
+    data() {
+      return {
+              message: '',
+              messageSelect: '',
+              messageSelectMany: [],
+         }
+      },
+  
+    methods: {
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template:  `<div>
+
+         <h3>select多选择用法</h3> 
+         <div>
+           {{messageSelectMany}}
+         <select v-model="messageSelectMany" multiple>
+          <option value='A' > A </option>
+          <option value='B' > B </option>
+          <option value='C' > C </option>
+         </select>
+            </div>             
+          </div>` 
+  });
+```
+
+
+
+第二种定义的方式
+
+![image-20231101231558806](images/image-20231101231558806.png)
+
+
+
+代码如下
+
+```html
+  const App = Vue.createApp({
+    data() {
+      return {
+              messout: [],
+              message: '',
+              messageSelect: '',
+              messageSelectMany: [],
+              messageSelectMany2: [{
+                text: 'A',value: 'A',
+              },
+              { 
+                text: 'B',value: 'B',
+              },
+              { 
+                text: 'C',value: 'C',
+              },
+            ]
+         }
+      },
+  
+    methods: {
+    },
+    //如果是false，展示if if if if，否则展示else
+ 
+    template:  `<div>  
+            <h3>select多选择用法2</h3> 
+         <div>
+           {{messout}}
+          <select v-model="messout" multiple>  
+           <option v-for="item in messageSelectMany2" :value="item.value"> {{item.text}}</option>
+         </select>
+            </div>              
+          </div>` 
+  });
+
+  const vm = App.mount('#root')
+```
+
+
+
+
+
+## checkbox的一些特性
+
+
+
+当选中的时候，展示为hello, 当没有选中的时候显示world,不用true或者false来表示
+
+```html
+<script>
+  const App = Vue.createApp({
+    data() {
+      return {
+              message: 'world',
+         }
+      },
+  
+    methods: {
+    },
+    template:  `<div>
+          <div>
+             {{message}}
+
+             <input type="checkbox" true-value="hello" false-value="world" v-model="message"/>  
+          </div>
+          </div>` 
+  });
+
+  const vm = App.mount('#root')
+</script>
+```
+
+
+
+修饰符lazy
+
+效果如下
+
+![](./images/image-20231101231558807.gif)
+
+```html
+    template:  `<div>
+          <div>
+             {{message}}
+
+             <input  true-value="hello" v-model.lazy="message"/>  
+          </div>
+          </div>` 
+```
+
+
+
+修饰符-number 
+
+只能输入number ，并且以number的方式存储到message中
+
+
+
+![image-20231101234111112](images/image-20231101234111112.png)
+
+使用的方法就是 v-model.number
+
+```html
+  const App = Vue.createApp({
+    data() {
+      return {
+              message: 'world',
+         }
+      },
+  
+    methods: {
+    },
+    template:  `<div>
+          <br>
+          <div>
+             {{ typeof message}}
+             <input type="number" v-model.number="message"/>  
+          </div>          
+          </div>` 
+  });
+
+```
+
+
+
+修饰符-trim 
+
+功能，去除输入字符前后的空格，但是中间的不会
+
+![image-20231101234616357](images/image-20231101234616357.png)
+
+
+
+这个比较好用
+
+使用方法v-model.trim
+
+```html
+          <br>
+          <h3> 去除空格</h3>
+          <div>
+             {{message}}
+             <input v-model.trim="message"/>  
+          </div>              
+          </div>` 
+```
 
