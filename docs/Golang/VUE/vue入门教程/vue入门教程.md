@@ -1385,9 +1385,11 @@ click传递多个方法
 </script>
 ```
 
+
+
 因为有个连锁反应，在点击handleBtinClick3之后，会连带触发 handleDivClick ，所以解决这个问题，需要用到下面的代码
 
-```html
+```txt
     template:  `<div>
           <!------
           {{counter}}
@@ -1819,4 +1821,259 @@ select多选择
           </div>              
           </div>` 
 ```
+
+
+
+
+
+
+
+
+
+# 组件
+
+
+
+## 全局和局部组件
+
+
+
+把一个复杂的网页拆分成小的部分来进行维护，这些小的部分就是组件，最顶端那个就是根组件，组件是可以复用的，但是组件中变量等数据是隔离的
+
+
+
+
+
+
+
+![image-20231102101137076](images/image-20231102101137076.png)
+
+
+
+
+
+**全局组件**
+
+定义： App.component ,引用 <counter />
+
+```html
+ template:  `<div>
+          <div>
+             {{message}} 
+             <counter />
+          </div>` 
+  });
+
+  App.component('counter',{
+    data() {
+      return {
+        count: 1
+      }
+    },
+    template: `<div @click="count +=1">{{count}}</div>`
+  })
+
+```
+
+
+
+
+
+组件可以多次复用，但是数据是隔离的，当然，子组件也可以引用用其他全局组件，所以，即便不使用全局组件，也是挂载到vue中的，只要定义了全局组件，处处都可以使用，缺点就是影响性能。
+
+
+
+```html
+    template:  `<div>
+          <div>
+             {{message}} 
+             <counter />
+             <counter />
+             <counter />
+             <counter />
+          </div>` 
+```
+
+
+
+![](./images/image-20231102101137077.gif)
+
+
+
+
+
+**局部组件**
+
+注册局部组件 const App = Vue.createApp
+
+引用局部组件： 
+
+const App = Vue.createApp({
+    components: {  helloworld2:  helloWorld },
+
+```html
+<script>
+
+    const  helloWorld = {
+      template: `<div>xxxxxxxxxxxxxxxxxxxxxxxxxx</div>`
+  };
+
+  const App = Vue.createApp({
+    components: {  helloworld2:  helloWorld },
+
+    template:  `<div>
+             <helloworld2 />
+             <counter />
+             <counter />
+             <counter />
+          </div>` 
+  });
+
+  App.component('counter',{
+    data() {
+      return {
+        count: 1
+      }
+    },
+    template: `<div @click="count +=1">{{count}}</div>`
+  })
+
+   
+  const vm = App.mount('#root')
+</script>
+```
+
+
+
+
+
+优缺点： 
+
+组件的定义
+组件具备复用性
+全局组件,只要定义了,处处可以使用,性能不高,但是使用起来简单,名字建议小写字母单词,中间横线间隔
+局部组件,定义了,要注册之后才能使用,性能比较高,,使用起来有些麻烦,建议大些字母开头,驼峰命名
+局部组件使用时,要做一个名字和组件间的映射对象,你不写映射,Vue底层也会自动尝试帮你做映射
+
+
+
+## 组件值传递
+
+父组件传递过来的值如何在组件中调用呢,在使用组件test时，直接使用content给子组件传递一个变量，然后子组件拿到之后，在模板中进行渲染 ，这就是数据传递
+
+```html
+<script>
+
+  const App = Vue.createApp({
+    template:  `<div>
+             <test content="hello,world" />
+          </div>` 
+  })
+
+  App.component('test',{
+    props: ['content'],
+    template: `<div>{{content}}</div>`
+  })
+
+
+  const vm = App.mount('#root')
+</script>
+```
+
+
+
+如何把整数类型进行传递呢，通过定义一个data数据来实现，这样就可以实现动态传参
+
+```txt
+ <test :content="num"/>
+```
+ 
+
+这里带 : 表示动态参数，动态的数据可以修改，比较灵活。 不带: 表示静态，以字符串的方式
+
+```html
+<script>
+
+  const App = Vue.createApp({
+    data (){
+         return { num: 123 }
+    },
+    template:  `<div>
+             <test :content="num"/>  
+          </div>` 
+  })
+
+  App.component('test',{
+    props: ['content'],
+    template: `<div>{{typeof content}}  {{content}}</div>`
+  })
+
+
+  const vm = App.mount('#root')
+</script>
+```
+
+
+
+值传递过程中的值类型校验, props: {content: String},  表示检验传递过来的值是字符串，如果是整数，则提示类型对不上
+
+```html
+<script>
+
+  const App = Vue.createApp({
+    data (){
+         return { num: 123 }
+    },
+    template:  `<div>
+             <test :content="num"/>
+          </div>` 
+  })
+
+  App.component('test',{
+    // props: ['content'],
+    props: {content: String},
+    template: `<div>{{typeof content}}  {{content}}</div>`
+  })
+
+
+  const vm = App.mount('#root')
+</script>
+```
+
+
+
+如果传递的值跟校验的值不相等，提示警告
+
+![image-20231102112500526](images/image-20231102112500526.png)
+
+支持的类型
+
+string , Boolean , Array , Object, Function, Symbol
+
+
+
+当然，还有其他的一些用法
+
+```vue
+props: {
+  content:{ 
+      type: Number,
+      required: true //必须传递这个参数
+      default: 789   //默认值
+      validator: function(value) {
+       return value < 1000; //小于1000的值
+}
+}},
+//当然 default也可以写成一个函数
+default: () => {
+     return 123; 
+}
+
+
+
+```
+
+
+
+
 

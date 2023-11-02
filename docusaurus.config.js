@@ -132,7 +132,14 @@ const config = {
                   sidebarId: 'SreMiddleSoft',   //这个名称最好是英文
                   to: '/docs/Sre/2-中间件',
                   label: '中间件',
-              },                             
+              },   
+                {
+                  type: 'docSidebar',
+                  sidebarId: 'SreMianshi',   //这个名称最好是英文
+                  to: '/docs/Sre/3-面试题',
+                  label: '面试题',
+              },  
+			  
             ]
         }, 
 
