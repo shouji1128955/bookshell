@@ -210,7 +210,13 @@ const config = {
             sidebarId: 'DevOpsSkywalking',   //这个名称最好是英文
             to: '/docs/DevOps/4-skywalking',
             label: 'skywalking',
-          },                                          
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'DevOpsobservability',   //这个名称最好是英文
+            to: '/docs/DevOps/5-observability',
+            label: 'observability',
+          },		  
       ]
   },                           
           {
@@ -242,7 +248,20 @@ const config = {
                 label: 'Vue',
               },                           
             ]
-        },          
+        }, 
+
+          {
+            label: 'JAVA',
+            position: 'left',
+            items: [
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'JAVA',   //这个名称最好是英文
+                    to: '/docs/Java/JAVA',
+                    label: 'JAVA',
+                },                          
+            ]
+        },		
           {to: '/blog',
            label: 'Blog',
           position: 'left'
