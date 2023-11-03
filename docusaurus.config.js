@@ -258,7 +258,7 @@ const config = {
                     type: 'docSidebar',
                     sidebarId: 'JAVA',   //这个名称最好是英文
                     to: '/docs/Java/JAVA',
-                    label: 'JAVA',
+                    label: 'Java',
                 },                          
             ]
         },		
