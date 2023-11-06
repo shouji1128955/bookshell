@@ -2630,6 +2630,132 @@ provide 和 inject
 
 ### VueX
 
+#### 1、VueX是什么
+
+Vuex 是数据管理框架
+
+
+
+个人疑问： 
+
+Vuex中的数据是从哪里来？
+
+Vuex 中的数据通常来自前端应用内部，而不是直接从外部源（如数据库）获取。Vuex 的核心概念是将应用的状态（或数据）集中管理，这些数据可以在应用的各个组件中共享和使用。
+
+在一个典型的 Vue.js 应用中，你可以在组件中定义本地数据，然后通过 Vuex 来集中管理这些数据。这些本地数据可以是应用的状态、用户信息、购物车内容、设置选项等等。
+
+Vuex 将这些数据存储在一个全局的状态树（state tree）中，这个状态树可以通过 Vuex 的 API 进行修改和访问。当你需要更新应用的状态时，你可以通过触发 mutations 来修改状态，然后在组件中使用 getters 来获取状态的值。
+
+虽然 Vuex 的数据通常不直接来自数据库，但你可以使用异步操作来从数据库或其他外部数据源获取数据，然后将这些数据存储在 Vuex 中。这通常涉及到在 Vuex 中定义 actions，这些 actions 可以发起异步请求并在数据返回后触发 mutations 来更新状态。
+
+总结来说，Vuex 中的数据主要来自前端应用内部，但可以通过异步操作从外部数据源（如数据库）获取数据，然后集中管理和使用这些数据。这种方式有助于更好地组织和维护应用的状态和数据。
+
+#### 2、创建项目
+
+选择Router和Vuex
+
+
+
+![image-20231105213515892](images/image-20231105213515892.png)
+
+
+
+选择vue版本
+
+![image-20231105220757157](./images/image-20231105220757157.png)
+
+
+
+![image-20231105225418329](images/image-20231105225418329.png)
+
+
+
+![image-20231105225510355](images/image-20231105225510355.png)
+
+
+
+store中的代码
+
+```js title="store/index.js" 
+import { createStore } from 'vuex'
+
+//VueX数据管理框架
+//VueX创建了一个全局唯一的仓库，用来存放全局的数据  
+export default createStore({
+  state: {
+    name: 'dell'
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
+})
+```
+
+
+
+或者说，多个页面之间的数据能够共享一组数据
+
+实现在Home和about两个页面数据展示
+
+
+
+```vue title=&quot;store/about.vue&quot; 
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    <h3>{{ myName }}</h3>
+  </div>
+
+</template>
+<script>
+// @ is an alias to /src
+
+export default {
+  name: 'Home',
+
+  computed: {
+    
+    myName(){
+       return this.$store.state.name;
+    }
+  }
+}
+</script>
+```
+
+
+
+home.vue
+
+```vue  title=&quot;store/home.vue&quot;
+<template>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <h3>{{ myName }}</h3>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+
+export default {
+  name: 'Home',
+
+  computed: {
+    
+    myName(){
+       return this.$store.state.name;
+    }
+  }
+}
+</script>
+
+```
 
 
 
@@ -2637,11 +2763,100 @@ provide 和 inject
 
 
 
-
-
-
-![image-20231105165539391](images/image-20231105165539391.png)
+![image-20231105165539391](http://minio.zlqit.com/file/202311052139551.png)
 
 项目引用
 
 ![image-20231105165648329](images/image-20231105165648329.png)
+
+
+
+
+
+#### 3.如何修改数据
+
+如何修改全局数据
+
+所以，这里有一套对全局数据进行修改的机制，不能直接修改，下面的修改流程需要背过，无论如何都要记住
+
+
+
+
+
+```html title=&quot;about.vue&quot;
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    <h3>{{ myName }}</h3>
+    <h1 @click="handleClick">点击修改数据</h1>
+  </div>
+
+</template>
+<script>
+// @ is an alias to /src
+
+export default {
+  name: 'Home',
+
+  computed: {
+    
+    myName(){
+       return this.$store.state.name;
+    }
+  },
+
+  methods: {
+    handleClick(){
+      //1. dispatch 方法，派发一个 action,名字叫做change
+      //2. 感知到change这个action,执行的store中的actions下面的change
+      //3. commit 提交一个叫做 change的数据改变
+      //4. mutation 感知到提交的change改变，执行change方法
+      this.$store.dispatch('change')
+        
+        
+    }
+  }
+}
+</script>
+```
+
+
+
+```txt  this.$store.dispatch('change') `` 调用修改链比较长，其实可以通过   ```   ```js   this.$store.commit('change')``` commit这样来修改，但是这个是有区别的。如果业务只涉及同步的操作，不涉及异步的操作，可以简化下上面的代码 ，就不需要actions。
+
+
+
+
+
+```vue title=&quot;store/index.js&quot;
+import { createStore } from 'vuex'
+
+//VueX数据管理框架
+//VueX创建了一个全局唯一的仓库，用来存放全局的数据  
+export default createStore({
+  state: {
+    name: 'dell'
+  },
+  mutations: {
+    change(){
+      //第四步 对应的mutation被执行
+      console.log('mutation')
+      
+      //第五步 在mutation里面修改数据
+      this.state.name='ilync'
+    }
+
+    },
+  actions: {
+    //第二步 store 感知到你触发了一个叫做change的action，执行change方法
+    change(){
+
+      //第三步，提交一个commit 触发一个mutation
+      this.commit('change')
+    }
+  },
+  modules: {
+  }
+})
+```
+

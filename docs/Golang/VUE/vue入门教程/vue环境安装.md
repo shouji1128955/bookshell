@@ -1,5 +1,55 @@
 
 
+## nrm安装
+
+
+
+```txt
+D:\demo>npm  install nrm -g
+added 17 packages in 1s
+
+D:\demo>nrm ls
+  npm ---------- https://registry.npmjs.org/
+  yarn --------- https://registry.yarnpkg.com/
+  tencent ------ https://mirrors.cloud.tencent.com/npm/
+  cnpm --------- https://r.cnpmjs.org/
+  taobao ------- https://registry.npmmirror.com/
+  npmMirror ---- https://skimdb.npmjs.com/registry/
+```
+
+
+
+比如，我想使用taobao这个，如何使用呢?
+
+```txt
+D:\demo>nrm use taobao
+ SUCCESS  The registry has been changed to 'taobao'.
+
+#验证
+D:\demo>nrm  ls
+  npm ---------- https://registry.npmjs.org/
+  yarn --------- https://registry.yarnpkg.com/
+  tencent ------ https://mirrors.cloud.tencent.com/npm/
+  cnpm --------- https://r.cnpmjs.org/
+* taobao ------- https://registry.npmmirror.com/
+  npmMirror ---- https://skimdb.npmjs.com/registry/
+```
+
+
+
+
+
+## npm安装
+
+卸载老版本
+
+```shell
+npm uninstall vue-cli -g
+yarn global remove vue-cli
+```
+
+
+
 
 
 安装指定版本npm
@@ -32,6 +82,7 @@ npm config get registry
 
 ```html
 npm install -g @vue/cli
+npm install  @vue/cli@4.5.9 -g  //安装指定指定版本
 ```
 
 查看vue-cli的版本
@@ -39,3 +90,8 @@ npm install -g @vue/cli
 ```
 vue -V
 ```
+
+
+
+
+
