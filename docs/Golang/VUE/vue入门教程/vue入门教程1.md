@@ -2608,6 +2608,68 @@ provide 和 inject
 
 
 
+## Composition API
+
+### 问题笔记：
+
+先看一个问题
+
+```html
+export default defineComponent({
+     CommonHeader,
+})
+
+和下面的这种方式有什么区别
+export default {
+   components: {
+    CommonHeader
+   }
+}
+
+ChatGPT
+这两种方式
+```
+
+这两种方式都用于注册子组件，但有一些区别：
+
+1. Vue 3 Composition API 风格（`defineComponent`）：
+
+   ```
+   javascriptCopy codeexport default defineComponent({
+       components: {
+           CommonHeader
+       }
+   })
+   ```
+
+   这种方式是使用 Vue 3 的 Composition API 风格来定义组件。在这里，`components` 是一个选项，你将子组件（例如 `CommonHeader`）添加到该选项中。这是Vue 3中的一种推荐方式，特别是当你使用Composition API来构建组件时。
+
+2. 传统 Vue 2 风格：
+
+   ```
+   javascriptCopy codeexport default {
+       components: {
+           CommonHeader
+       }
+   }
+   ```
+
+   这种方式是在传统的 Vue 2 风格中定义组件，其中 `components` 是Vue 2 组件选项的一部分。这是Vue 2中的一种方式。
+
+实际上，Vue 3 的 `defineComponent` 方法是用来模拟 Vue 2 风格的组件选项，但它更适合与 Composition API 一起使用。两种方式都可以用来注册子组件，但如果你正在使用Vue 3和Composition API，推荐使用第一种方式，因为它更与Vue 3的新特性兼容。如果你在使用Vue 2，那么第二种方式是合适的。
+
+总之，区别主要在于Vue版本和风格，以及是否使用Composition API。第一种方式更适合Vue 3和Composition API，而第二种方式更适合Vue 2。
+
+第二种方式在vue中也是常用的
+
+
+
+
+
+
+
+
+
 ## VUE中的动画
 
 

@@ -2665,3 +2665,42 @@ D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
 ##### 8.3 折线图，柱状图，圆饼图
 
+
+
+
+
+
+
+
+
+## 问题记录
+
+图片动态传递
+
+getImgSrc('icon2') 这个里面传递的就是实参
+
+```htm
+<template>
+  <div>
+    <img :src="getImgSrc('icon2')" alt="Icon">
+  </div>
+</template>
+
+<script> 
+//图片动态更换
+export default {
+    setup() {
+        const getImgSrc = (imageName) => {
+        //console.log('hello',(import.meta.url).href);
+        //console.log(new URL(`../assets/images/${icon}.jpg`,import.meta.url));
+        return new URL(`../assets/images/${imageName}.jpg`,import.meta.url).href;
+    };
+    return {
+        getImgSrc
+    }
+    }
+}
+
+</script>
+```
+
