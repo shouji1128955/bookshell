@@ -1846,6 +1846,8 @@ select多选择
 
 
 
+
+
 ### 全局和局部组件
 
 
@@ -1909,6 +1911,109 @@ select多选择
 
 
 ![](./images/image-20231102101137077.gif)
+
+
+
+
+
+#### 注册组件的几种方式
+
+个人总结
+
+ 全局注册-方式1 
+
+这种是vue2的写法
+
+可使用 `app.component(name, Component)`注册组件的方法，在此应用的任意组件的模板中使用
+
+- `name`：注册的名字
+- `Component`：需要注册的组件
+
+```shell
+// 在 main.js 中注册全局组件
+import { createApp } from 'vue'
+import App from './App.vue'
+// 1：引入需要被注册的组件
+import Login from './components/Login.vue' 
+
+const app = createApp(App)
+
+// 2：全局注册组件
+app.component('MLogin', Login)
+
+app.mount('#app')
+```
+
+
+
+```shell
+// 我们使用注册的组件
+<template>
+    <h3>登录系统</h3>
+    <!-- 使用全局注册的组件 -->
+    <MLogin />
+</template>
+```
+
+
+
+方式2
+
+```shell
+javascriptCopy code
+// 定义一个 Vue 组件
+const MyComponent = {
+  template: '<div>Hello, World!</div>'
+};
+
+// 将组件注册到全局
+Vue.component('my-component', MyComponent);
+
+// 创建 Vue 实例
+new Vue({
+  el: '#app',
+  template: '<my-component />'
+});
+```
+
+
+
+
+
+方式3
+
+![image-20231109092104696](images/image-20231109092104696.png)
+
+
+
+
+
+### 局部注册
+
+方式1 
+
+局部注册的组件需要在使用它的父组件中显式导入，并且只能在该父组件中使用
+
+> 在组合式 `API` 中的 `` 内，直接导入的组件就可以在模板中直接可用，无需注册。
+
+
+
+```shell
+<script setup>
+// 1：引入需要注册的组件，无需注册
+import LoginVue from './components/Login.vue';
+</script>
+
+<template>
+    <h3>登录系统</h3>
+    <!-- 2：使用全局注册的组件 -->
+    <LoginVue />
+</template>
+```
+
+
+
+
 
 
 

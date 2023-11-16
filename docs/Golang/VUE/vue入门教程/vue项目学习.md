@@ -2704,3 +2704,138 @@ export default {
 </script>
 ```
 
+
+
+
+
+## Mockjs  
+
+拦截请求，通过mock来返回数据
+
+在开发初期阶段，后端开发先出接口文档
+
+
+
+安装
+
+```
+npm install mockjs -S 
+```
+
+创建文档home.js,先创建文件夹 api\mockData
+
+![image-20231115001143381](images/image-20231115001143381.png)
+
+
+
+
+
+### 本地mock的使用
+
+操作方式
+
+![image-20231115004000457](images/image-20231115004000457.png)
+
+
+
+
+
+
+
+
+
+调用
+
+
+
+![image-20231115004048753](images/image-20231115004048753.png)
+
+
+
+
+
+![image-20231115004135640](images/image-20231115004135640.png)
+
+
+
+
+
+
+
+Home.vue代码修改
+
+```html
+<script>
+import axios from "axios"
+import { defineComponent, onMounted, ref} from 'vue';
+export default defineComponent({
+    setup() {
+        let tableData = ref([]);  //这里定义，需要研究
+        // const tableData = [
+        //     {
+        //         name: "oppo",
+        //         todayBuy: 500,
+        //         monthDay: 3500,
+        //         totalDay: 22000
+        //     },
+        //     {
+        //         name: "vivo",
+        //         todayBuy: 510,
+        //         monthDay: 3300,
+        //         totalDay: 27000
+        //     }
+
+        // ];
+        const tableLabel ={
+            name: '课程',
+            todayBuy: '今日购买',
+            monthDay: '本月购买',
+            totalDay: '总购买'
+            
+        }
+        const getTableList = async () => { 
+            await axios.get("/home/getData").then((res) =>{
+                console.log(res)
+                tableData.value = res.data.data.tableData
+            })
+        }
+        onMounted(() =>{
+            getTableList()
+        })
+        return {
+            tableData,
+            tableLabel
+
+        }
+    }
+})
+
+</script>
+```
+
+
+
+
+
+### 线上mock的使用
+
+登录下面的在线网址，进行操作
+
+fastmock.site 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
