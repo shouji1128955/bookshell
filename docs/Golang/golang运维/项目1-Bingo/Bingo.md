@@ -32,7 +32,7 @@ npm  -v   # pip
 
 在安装node.js完成后，在node.js中会同时帮我们安装一个包管理器npm。我们可以借助npm命令来安装node.js的第三方包。这个工具相当于python的pip管理器，php的composer，go语言的go get，java的maven。
 
-## 【2】vite创建项目
+## 【2】vite创建项目111
 
 ### 2.1、项目搭建
 
