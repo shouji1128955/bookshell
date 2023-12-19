@@ -1,12 +1,3 @@
-```shell
-title: github结合actions实现自动化部署
-description: A short description of this page
-keywords: [docusaurus, describing, the main topics]
-authors: liteshell
-slug: mongodb数据库恢复
-tags: [action,docusaurus]
-```
-
 ## 分析问题现状
 
 mongo版本： 3.2.17
