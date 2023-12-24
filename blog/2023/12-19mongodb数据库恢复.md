@@ -366,3 +366,118 @@ mongoimport --host localhost --port 27017 --db mydb --collection users --file us
 
 
 
+## 问题：
+
+经过上面一番捯饬，数据都导入成功了，但是数据是还原了很少的一部分，很多的数据还是丢失了。 。所以，以上这种情景并不能还原所有的数。下面，通过第三方工具实现对数据的恢复
+
+
+
+## WT工具恢复mongod数据
+
+
+
+### WT安装
+
+```shell
+需要的环境： 
+ 操作系统:  centos7
+ mongod版本: 3.2.17
+```
+
+
+
+依赖安装
+
+ ```shell
+ yum install -y epel-release libtool automake snappy snappy-devel lz4 lz4-devel zstd zstd-devel libzstd-devel zlib zlib-devel git make vim-common
+ ```
+
+
+
+安装源码-需要借助其他工具
+
+```shell
+git clone https://github.com/wiredtiger/wiredtiger.git
+```
+
+
+
+根据所使用的MongoDB版本，应该选择正确的`wt`分支。例如我当前使用的`MongoDB 3.2.17`，那么同样应该选择WiredTiger的相应tag MongoDB 3.2.17
+
+```shell
+[root@113 wt]# git tag | grep 3.2.17
+mongodb-3.2.17
+[root@113 wt]# git checkout tags/mongodb-3.2.17 -b v3.2.17
+```
+
+
+
+### 编译源码
+
+```shell
+sh autogen.sh
+./configure --disable-shared --with-builtins=lz4,snappy,zlib,zstd
+make -j $(nproc)
+make install
+```
+
+
+
+## 通过wt恢复数据
+
+
+
+启动Mongodb ，安装mongod参考 yum部署方式
+
+
+
+任意创建一个集合，我们将把数据恢复到这个集合中：
+
+
+
+![image-20231220194042182](images/image-20231220194042182.png)
+
+
+
+collection-2-2766252704149925868 即我们要使用的目标文件名。此时应:
+
+81--1313801531657640813.wt : 我们从生产环境出现问题的wt文件中导入到现在的测试环境，然后进行修复
+
+
+
+```shell
+rm -f   collection-2-2766252704149925868.wt
+mv 81--1313801531657640813.wt  collection-2-2766252704149925868.wt
+
+```
+
+### 修复
+
+让wt帮我们修复文件(非常重要的一步)
+
+```shell
+systemctl  stop mongod
+
+wt salvage file:collection-2-2766252704149925868.wt
+chown mongod.mongod collection-2-2766252704149925868.wt
+
+systemctl  start mongod
+```
+
+
+
+验证数据没有问题后，然后导出数据
+
+```shell
+mongoexport --host 127.0.0.1 --port 27017 --db demo --collection restore --out new_alarm20231220out.json --jsonArray
+```
+
+
+
+在导入到生产环境中去
+
+```shell
+mongoimport --host localhost --port 27017 --db sensorcmd  --collection new_alarm --file new_alarm20231220out.json --jsonArray
+```
+
+![image-20231220194809118](images/image-20231220194809118.png)
