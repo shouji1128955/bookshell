@@ -99,7 +99,7 @@ const config = {
           autoCollapseCategories: true,
         },
       },	  
-      image: 'https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/202312302001705.png',     
+      image: 'https://docusaurus.io/zh-CN/img/undraw_typewriter.svg',     
       navbar: {
         title: 'LiteShell',
         logo: {
