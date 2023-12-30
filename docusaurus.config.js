@@ -97,7 +97,7 @@ const config = {
           autoCollapseCategories: true,
         },
       },	  
-      image: 'img/docusaurus-social-card.jpg',     
+      image: '/img/dyte-docs-card.png',     
       navbar: {
         title: 'LiteShell',
         logo: {
