@@ -17,7 +17,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://book.zlqit.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -90,6 +90,8 @@ const config = {
   
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+		
+		
       // Replace with your project's social card
       docs: {
         sidebar: {
@@ -97,7 +99,7 @@ const config = {
           autoCollapseCategories: true,
         },
       },	  
-      image: '/img/dyte-docs-card.png',     
+      image: 'https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/202312302001705.png',     
       navbar: {
         title: 'LiteShell',
         logo: {
