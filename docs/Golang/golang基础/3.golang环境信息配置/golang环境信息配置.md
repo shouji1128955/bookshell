@@ -2,6 +2,62 @@
 
 ### [用法](https://goproxy.cn/#usage)
 
+### 在 Gogland 中禁用调试输出
+
+在我的调试控制台中更新到最新的 Gogland 版本后，我看到了这样的信息
+
+```shell
+GOROOT=D:\programinstall\golang #gosetup
+GOPATH=D:\golangproject #gosetup
+D:\programinstall\golang\bin\go.exe build -o C:\Users\zhanglaiqiang\AppData\Local\JetBrains\GoLand2023.1\tmp\GoLand\___7go_build_main_go.exe D:\golangproject\src\test2\main.go #gosetup
+C:\Users\zhanglaiqiang\AppData\Local\JetBrains\GoLand2023.1\tmp\GoLand\___7go_build_main_go.exe #gosetup
+true
+```
+
+
+
+**最佳答案**
+
+
+
+1. 打开帮助 |寻找行动……
+2. 键入 Registry 并按 Enter。
+3. 在那里找到 go.run.processes.with.pty 并将其关闭。
+
+
+
+### goland快捷键操作
+
+快速的选中删除的一行
+
+- 按下 `Ctrl + Y`（对于 Windows/Linux 用户）或 `Cmd + Delete`（对于 Mac 用户）。
+
+快速的在光标处换行
+
+- 在 Windows/Linux 上，可以使用 `Shift + Enter` 快速在下方插入新行
+- 在 macOS 上，可以使用 `Cmd + Enter`。
+
+
+
+```shell
+CTRL+X 删除当前光标所在行
+CTRL+D 复制当前光标所在行
+ALT+Q 可以看到当前方法的声明
+CTRL+Backspace 按单词进行删除
+```
+
+
+
+
+
+goland快捷键
+
+[GoLand 快捷键 - MikuDance - 博客园 (cnblogs.com)](https://www.cnblogs.com/just-save/p/12389901.html)
+
+
+
+
+
 [Go 1.13 及以上（推荐）](https://goproxy.cn/#usage-go-113-and-above-recommended)
 
 打开你的终端并执行
