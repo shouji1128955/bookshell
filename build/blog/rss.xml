@@ -58,5 +58,11 @@ directoryForIndexes: true<br>
             <category>action</category>
             <category>docusaurus</category>
         </item>
+        <item>
+            <title><![CDATA[2024/5.clickhouse中zookeeper元数据恢复]]></title>
+            <link>https://book.zlqit.com/blog/2024/5.clickhouse中zookeeper元数据恢复</link>
+            <guid>https://book.zlqit.com/blog/2024/5.clickhouse中zookeeper元数据恢复</guid>
+            <pubDate>Sat, 26 Aug 2023 19:13:01 GMT</pubDate>
+        </item>
     </channel>
 </rss>

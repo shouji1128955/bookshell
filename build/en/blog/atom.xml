@@ -65,4 +65,10 @@ directoryForIndexes: true<br>
         <category label="action" term="action"/>
         <category label="docusaurus" term="docusaurus"/>
     </entry>
+    <entry>
+        <title type="html"><![CDATA[2024/5.clickhouse中zookeeper元数据恢复]]></title>
+        <id>https://book.zlqit.com/en/blog/2024/5.clickhouse中zookeeper元数据恢复</id>
+        <link href="https://book.zlqit.com/en/blog/2024/5.clickhouse中zookeeper元数据恢复"/>
+        <updated>2023-08-26T19:13:01.000Z</updated>
+    </entry>
 </feed>
