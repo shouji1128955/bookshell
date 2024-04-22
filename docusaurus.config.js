@@ -263,7 +263,31 @@ const config = {
                     label: 'Java',
                 },                          
             ]
-        },		
+        },
+          {
+            label: 'Treasure',
+            position: 'left',
+            items: [
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'English',   //这个名称最好是英文
+                    to: '/docs/Treasure/English',
+                    label: '英语学习',
+                },
+                {
+                  type: 'docSidebar',
+                  sidebarId: 'Wisdom',   //这个名称最好是英文
+                  to: '/docs/Treasure/Wisdom',
+                  label: 'Plan and strategize',
+              },
+                {
+                type: 'docSidebar',
+                sidebarId: 'Studytour',   //这个名称最好是英文
+                to: '/docs/Treasure/Studytour',
+                label: 'read book',
+              },                         
+            ]
+        }, 		
           {to: '/blog',
            label: 'Blog',
           position: 'left'
