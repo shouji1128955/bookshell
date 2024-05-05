@@ -218,7 +218,14 @@ const config = {
             sidebarId: 'DevOpsobservability',   //这个名称最好是英文
             to: '/docs/DevOps/5-observability',
             label: 'observability',
-          },		  
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'DevOpsobservability',   //这个名称最好是英文
+            to: '/docs/DevOps/6-terraform',
+            label: 'observability',
+          },
+		  
       ]
   },                           
           {
