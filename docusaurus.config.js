@@ -221,7 +221,7 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'DevOpsobservability',   //这个名称最好是英文
+            sidebarId: 'DevOpsterraform',   //这个名称最好是英文
             to: '/docs/DevOps/6-terraform',
             label: 'terraform',
           },
