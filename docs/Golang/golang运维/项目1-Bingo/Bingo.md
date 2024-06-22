@@ -53,17 +53,17 @@ yarn && yarn dev
 
 执行上面命令最终效果如下：
 
-![image-20230319154804003](http://images.zlqit.com/bookshell/golang/assets/image-20230319154804003.png)
+![image-20230319154804003](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230319154804003.png)
 
 那么访问一下命令执行完成后提示出来的网址就可以看到网站了：http://localhost:5173/
 
-![image-20230809144120246](http://images.zlqit.com/bookshell/golang/assets/image-20230809144120246.png)
+![image-20230809144120246](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809144120246.png)
 
 
 
 基于goland设置启动项目按钮
 
-![image-20230809144632604](http://images.zlqit.com/bookshell/golang/assets/image-20230809144632604-1563593.png)
+![image-20230809144632604](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809144632604-1563593.png)
 
 ### 2.2、项目目录结构介绍
 
@@ -86,7 +86,7 @@ yarn && yarn dev
 
 ### 2.3、项目执行流程图
 
-![1625305034687](http://images.zlqit.com/bookshell/golang/assets/1625305034687-1563796.png)
+![1625305034687](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1625305034687-1563796.png)
 
 
 
@@ -564,7 +564,7 @@ export default {
 
 访问http://localhost:5173/ 就看到了我们的主页面板页面。
 
-![image-20230809152937230](http://images.zlqit.com/bookshell/golang/assets/image-20230809152937230-1566178.png)
+![image-20230809152937230](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809152937230-1566178.png)
 
 ## 【3】ant-design插件
 
@@ -719,7 +719,7 @@ onMounted(() => {
 
 等待项目重启，查看浏览器效果如下：
 
-![image-20230809170114165](http://images.zlqit.com/bookshell/golang/assets/image-20230809170114165-1571675.png)
+![image-20230809170114165](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809170114165-1571675.png)
 
 ### 3.2、页面展示
 
@@ -1050,7 +1050,7 @@ export const HostChartOption = {
 };
 ```
 
-![image-20230809170340889](http://images.zlqit.com/bookshell/golang/assets/image-20230809170340889-1571822.png)
+![image-20230809170340889](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809170340889-1571822.png)
 
 #### 3.2.2 公共页面
 
@@ -1352,7 +1352,7 @@ export default router;
 
 等待项目重启，效果如下：
 
-![image-20230809173707907](http://images.zlqit.com/bookshell/golang/assets/image-20230809173707907-1573828-1574000.png)
+![image-20230809173707907](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809173707907-1573828-1574000.png)
 
 接下来，我们可以再次创建一个页面组件，用于将来管理公司的主机资产，`src/views/Host.vue`，代码：
 
@@ -1401,7 +1401,7 @@ router.beforeEach((to, from, next) => {
 export default router;
 ```
 
-![image-20230809174530483](http://images.zlqit.com/bookshell/golang/assets/image-20230809174530483.png)
+![image-20230809174530483](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809174530483.png)
 
 #### 3.2.3 登陆界面
 
@@ -1410,7 +1410,7 @@ src/views/Login.vue，代码：
 ```vue
 <template>
   <div class="login box">
-    <img src=".http://images.zlqit.com/bookshell/golang/assets/login.jpg" alt="">
+    <img src=".https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/login.jpg" alt="">
     <div class="login">
       <div class="login-title">
         <p class="hi">Hello,Bingo!</p>
@@ -1592,7 +1592,7 @@ export default router;
 
 登陆界面效果如下：
 
-![image-20230809174654313](http://images.zlqit.com/bookshell/golang/assets/image-20230809174654313-1574415.png)
+![image-20230809174654313](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230809174654313-1574415.png)
 
 # 二、后端初始化
 
@@ -1606,11 +1606,11 @@ go mod init bingo_api
 
 创建好项目之后，通过goland打开，在编辑器的配置中，切换源代理GOPROXY
 
-![image-20210421131905290](http://images.zlqit.com/bookshell/golang/assets/image-20210421131905290.png)
+![image-20210421131905290](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210421131905290.png)
 
-![image-20210421132219232](http://images.zlqit.com/bookshell/golang/assets/image-20210421132219232.png)
+![image-20210421132219232](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210421132219232.png)
 
-![image-20210421132332339](http://images.zlqit.com/bookshell/golang/assets/image-20210421132332339.png)
+![image-20210421132332339](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210421132332339.png)
 
 ```bash
 GOPROXY https://proxy.golang.org,direct
@@ -2176,7 +2176,7 @@ func ExceptionMiddleware(c *gin.Context) {
 Router.Use(middleware.ExceptionMiddleware)
 ```
 
-![image-20230808120421012](http://images.zlqit.com/bookshell/golang/assets/image-20230808120421012-1467462.png)
+![image-20230808120421012](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230808120421012-1467462.png)
 
 ## 2.7、数据库初始化
 
@@ -2454,7 +2454,7 @@ export default settings;
 
 先用postman发送请求测试一下接口是否正常：
 
-![image-20230810115828508](http://images.zlqit.com/bookshell/golang/assets/image-20230810115828508-1639909.png)
+![image-20230810115828508](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230810115828508-1639909.png)
 
 `src/http/requests.js`，代码：
 
@@ -2493,7 +2493,7 @@ get_api_test().then(response => {
 
 遇到跨域请求失败
 
-![image-20230902215057047](http://images.zlqit.com/bookshell/golang/assets/image-20230902215057047-3662658.png)
+![image-20230902215057047](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230902215057047-3662658.png)
 
 ### 【1】服务端实现跨域支持
 
@@ -2536,7 +2536,7 @@ Router.Use(middleware.CORS)
 
 完成了上面的步骤，我们就可以再访问host，通过后端提供数据给前端使用ajax访问了。
 
-![image-20230810114550550](http://images.zlqit.com/bookshell/golang/assets/image-20230810114550550-1639151.png)
+![image-20230810114550550](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230810114550550-1639151.png)
 
 ### 【2】客户端实现跨域支持
 
@@ -3289,7 +3289,7 @@ const (
 
 ```
 
-![image-20230903081526657](http://images.zlqit.com/bookshell/golang/assets/image-20230903081526657-3700128.png)
+![image-20230903081526657](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230903081526657-3700128.png)
 
 ## 3.4、JWT
 
@@ -3299,7 +3299,7 @@ const (
 
 > Json web token (JWT), 是为了在网络应用环境间传递声明(token，一段字符串)而执行的一种基于JSON的开放标准（(RFC 7519).该token被设计为紧凑且安全的，特别适用于分布式站点的单点登录（SSO）场景。JWT的声明(token，一段字符串)一般被用来在身份提供者和服务提供者间传递被认证的用户身份信息，以便于从资源服务器获取资源，也可以增加一些额外的其它业务逻辑所必须的声明信息，该token也可直接被用于身份认证，也可被数据加密。
 
-![image-20230903082116327](http://images.zlqit.com/bookshell/golang/assets/image-20230903082116327-3700477.png)
+![image-20230903082116327](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230903082116327-3700477.png)
 
 JWT就一段字符串，由三段信息构成的，将这三段信息文本用`.`拼接一起就构成了Jwt字符串。就像这样：
 
@@ -4037,7 +4037,7 @@ func UserAuthenticate(ctx *gin.Context){
 // 代码省略...
 ```
 
-![image-20230903135521988](http://images.zlqit.com/bookshell/golang/assets/image-20230903135521988-3720523.png)
+![image-20230903135521988](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230903135521988-3720523.png)
 
 **验证token**
 
@@ -4136,7 +4136,7 @@ func InitUserRouter(Router *gin.RouterGroup) {
 
 通过postman测试，可以发现，Token认证中间件正常工作。
 
-![image-20221217225956923](http://images.zlqit.com/bookshell/golang/assets/image-20221217225956923-5475165.png)
+![image-20221217225956923](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20221217225956923-5475165.png)
 
 ## 3.6、token本地存储
 
@@ -4188,7 +4188,7 @@ export default http;
 ```vue
 <template>
   <div class="login box">
-    <img src=".http://images.zlqit.com/bookshell/golang/assets/login.jpg" alt="">
+    <img src=".https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/login.jpg" alt="">
     <div class="login">
       <div class="login-title">
         <p class="hi">Hello,bingo!</p>
@@ -4446,7 +4446,7 @@ const loginHandler = () => {
 ```vue
 <template>
   <div class="login box">
-    <img src=".http://images.zlqit.com/bookshell/golang/assets/login.jpg" alt="">
+    <img src=".https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/login.jpg" alt="">
     <div class="login">
       <div class="login-title">
         <p class="hi">Hello,bingo!</p>
@@ -5141,9 +5141,9 @@ const categoryList = reactive({
 </style>
 ```
 
-![image-20230910075648592](http://images.zlqit.com/bookshell/golang/assets/image-20230910075648592-4303811.png)
+![image-20230910075648592](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910075648592-4303811.png)
 
-![image-20230910075737013](http://images.zlqit.com/bookshell/golang/assets/image-20230910075737013-4303858.png)
+![image-20230910075737013](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910075737013-4303858.png)
 
 ### 2. 主机模型
 
@@ -5483,7 +5483,7 @@ func InitRouter() *gin.Engine {
 
 ```
 
-![image-20230910075834197](http://images.zlqit.com/bookshell/golang/assets/image-20230910075834197-4303915.png)
+![image-20230910075834197](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910075834197-4303915.png)
 
 #### 【2】查看主机类别
 
@@ -5558,7 +5558,7 @@ func InitHostRouter(Router *gin.RouterGroup) {
 
 ```
 
-![image-20230910080028512](http://images.zlqit.com/bookshell/golang/assets/image-20230910080028512-4304029.png)
+![image-20230910080028512](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080028512-4304029.png)
 
 #### 【3】添加主机
 
@@ -5701,7 +5701,7 @@ func InitHostRouter(Router *gin.RouterGroup) {
 
 ````
 
-![image-20230910080007204](http://images.zlqit.com/bookshell/golang/assets/image-20230910080007204-4304008.png)
+![image-20230910080007204](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080007204-4304008.png)
 
 #### 【4】查看主机
 
@@ -5798,7 +5798,7 @@ func InitHostRouter(Router *gin.RouterGroup) {
 
 ```
 
-![image-20230910080059356](http://images.zlqit.com/bookshell/golang/assets/image-20230910080059356-4304060.png)
+![image-20230910080059356](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080059356-4304060.png)
 
  查看主机列表：
 
@@ -5917,7 +5917,7 @@ func HostDelete(ctx *gin.Context) {
 utils.Register(HostRouter, []string{"DELETE"}, "", middleware.JWTAuthorization(), api.HostDelete)
 ```
 
-![image-20230910080131346](http://images.zlqit.com/bookshell/golang/assets/image-20230910080131346-4304093.png)
+![image-20230910080131346](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080131346-4304093.png)
 
 
 
@@ -6265,15 +6265,15 @@ http.interceptors.response.use((response) => {
 export default http;
 ````
 
-![image-20230910080156304](http://images.zlqit.com/bookshell/golang/assets/image-20230910080156304.png)
+![image-20230910080156304](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080156304.png)
 
-![image-20230910080204521](http://images.zlqit.com/bookshell/golang/assets/image-20230910080204521-4304126.png)
+![image-20230910080204521](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080204521-4304126.png)
 
-![image-20230910080215038](http://images.zlqit.com/bookshell/golang/assets/image-20230910080215038-4304136.png)
+![image-20230910080215038](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080215038-4304136.png)
 
-![image-20230910080226670](http://images.zlqit.com/bookshell/golang/assets/image-20230910080226670-4304148.png)
+![image-20230910080226670](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080226670-4304148.png)
 
-![image-20230910080239800](http://images.zlqit.com/bookshell/golang/assets/image-20230910080239800-4304161.png)
+![image-20230910080239800](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910080239800-4304161.png)
 
 ## 4.2、基于ssh的主机验证
 
@@ -6297,9 +6297,9 @@ SSH远程登录之口令登录
 >
 > SSH的默认端口是22
 
-![image-20230910081413677](http://images.zlqit.com/bookshell/golang/assets/image-20230910081413677-4304855.png)
+![image-20230910081413677](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081413677-4304855.png)
 
-![image-20230910081425482](http://images.zlqit.com/bookshell/golang/assets/image-20230910081425482-4304866.png)
+![image-20230910081425482](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081425482-4304866.png)
 
 ### 4.2.2、go语言的ssh包
 
@@ -6449,13 +6449,13 @@ OK，接下来，我们就可以测试下封装效果了。
 
 ```
 
-![image-20230910081644136](http://images.zlqit.com/bookshell/golang/assets/image-20230910081644136-4305005.png)
+![image-20230910081644136](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081644136-4305005.png)
 
 测试基于密钥的ssh连接，首先在本地创建公私钥，通过ssh相关命令
 
 > ssh-keygen -t rsa
 
-![image-20230910081622738](http://images.zlqit.com/bookshell/golang/assets/image-20230910081622738-4304985.png)
+![image-20230910081622738](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081622738-4304985.png)
 
 运行结束以后，在$HOME/.ssh/目录下，会新生成两个文件：id_rsa.pub和id_rsa。前者是你的公钥，后者是你的私钥。
 
@@ -6554,7 +6554,7 @@ func main() {
 
 流程图：
 
-![image-20230910081722160](http://images.zlqit.com/bookshell/golang/assets/image-20230910081722160.png)
+![image-20230910081722160](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081722160.png)
 
 #### 【1】设置全局公私钥
 
@@ -6884,7 +6884,7 @@ func main() {
 
 #### 【3】postman测试接口
 
-![image-20230916172514218](http://images.zlqit.com/bookshell/golang/assets/image-20230916172514218-4856315.png)
+![image-20230916172514218](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230916172514218-4856315.png)
 
 #### 【4】前端联调
 
@@ -7204,9 +7204,9 @@ onMounted(() => {
 </style>
 ````
 
-![image-20230910081758234](http://images.zlqit.com/bookshell/golang/assets/image-20230910081758234.png)
+![image-20230910081758234](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081758234.png)
 
-![image-20230910081811850](http://images.zlqit.com/bookshell/golang/assets/image-20230910081811850.png)
+![image-20230910081811850](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910081811850.png)
 
 添加成功后检查远程服务器的`~/.ssh/authorized_keys`中是否添加公钥成功，成功后再执行上面的测试代码，即可连接成功。
 
@@ -7232,7 +7232,7 @@ Websocket（简称：ws）是web前端HTML5提供的一种浏览器与服务器�
 
 流程图：
 
-![image-20230910082059006](http://images.zlqit.com/bookshell/golang/assets/image-20230910082059006.png)
+![image-20230910082059006](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910082059006.png)
 
 大概步骤：
 
@@ -7386,7 +7386,7 @@ const columns = [
 </template>
 ```
 
-![image-20230910082121387](http://images.zlqit.com/bookshell/golang/assets/image-20230910082121387.png)
+![image-20230910082121387](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910082121387.png)
 
 **后端实现**
 
@@ -7453,7 +7453,7 @@ func main() {
 
 ```
 
-![image-20230910082138205](http://images.zlqit.com/bookshell/golang/assets/image-20230910082138205-4305300.png)
+![image-20230910082138205](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910082138205-4305300.png)
 
 ### 4.3.3、Console功能
 
@@ -7887,7 +7887,7 @@ utils.Register(HostRouter, []string{"GET"}, ":id/console", api.HostConsole)
 
 ```
 
-![image-20230910082208783](http://images.zlqit.com/bookshell/golang/assets/image-20230910082208783.png)
+![image-20230910082208783](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230910082208783.png)
 
 # 五、批量命令
 
@@ -8068,7 +8068,7 @@ import MultiExec from '../views/MultiExec'
 },
 ```
 
-![image-20230108152017505](http://images.zlqit.com/bookshell/golang/assets/image-20230108152017505-8013031.png)
+![image-20230108152017505](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230108152017505-8013031.png)
 
 获取主机分类和主机信息的列表数据并展示，`src/views/MultiExec.vue`，代码：
 
@@ -8304,7 +8304,7 @@ const delete_select_host = (infoIndex) => {
 </style>
 ```
 
-![image-20230108160337125](http://images.zlqit.com/bookshell/golang/assets/image-20230108160337125-8013031.png)
+![image-20230108160337125](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230108160337125-8013031.png)
 
 ## 5.2 指令输入框
 
@@ -8598,7 +8598,7 @@ const content = ref("")
 </style>
 ```
 
-![image-20230108160556610](http://images.zlqit.com/bookshell/golang/assets/image-20230108160556610-8013031.png)
+![image-20230108160556610](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230108160556610-8013031.png)
 
 ### 5.2.2、发送执行指令请求
 
@@ -8739,7 +8739,7 @@ ExecuteCMDFail = 1015 // 执行命令失败！
 utils.Register(HostRouter, []string{"POST"}, "cmd", middleware.JWTAuthorization(), api.HostRunCmdList)
 ```
 
-![image-20230109102502280](http://images.zlqit.com/bookshell/golang/assets/image-20230109102502280-8013031.png)
+![image-20230109102502280](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230109102502280-8013031.png)
 
 在进入选中服务器的终端环境，便可以查到新创建的文件。
 
@@ -9559,9 +9559,9 @@ const onTemplateCategoryFromSubmit = () => {
 
 好了，指令模板可以创建了，那么我们可以在批量执行指令的功能上，添加上选择模板执行指令的功能，并点击执行。
 
-![image-20230109111857349](http://images.zlqit.com/bookshell/golang/assets/image-20230109111857349-8013031.png)
+![image-20230109111857349](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230109111857349-8013031.png)
 
-![image-20230109111921050](http://images.zlqit.com/bookshell/golang/assets/image-20230109111921050-8013031.png)
+![image-20230109111921050](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230109111921050-8013031.png)
 
 ### 5.3.3、执行已有的指令
 

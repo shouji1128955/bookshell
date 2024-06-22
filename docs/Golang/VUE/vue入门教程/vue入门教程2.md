@@ -10,7 +10,7 @@ vscode
 
 mvvm模式
 
-![image-20230508170014129](http://images.zlqit.com/bookshell/golang/assets/image-20230508170014129.png)
+![image-20230508170014129](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508170014129.png)
 
 
 
@@ -22,7 +22,7 @@ mvvm模式
 
 最简单的一个demo
 
-![image-20230507234436527](http://images.zlqit.com/bookshell/golang/assets/image-20230507234436527.png)
+![image-20230507234436527](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230507234436527.png)
 
 
 
@@ -311,13 +311,13 @@ push数据
 
 就是在vue中，如何实现对一个标签的属性上展示数据的值呢 ？
 
-![image-20230508161913998](http://images.zlqit.com/bookshell/golang/assets/image-20230508161913998.png)
+![image-20230508161913998](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508161913998.png)
 
 
 
 鼠标放在上面进行展示
 
-![image-20230508161959938](http://images.zlqit.com/bookshell/golang/assets/image-20230508161959938.png)
+![image-20230508161959938](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508161959938.png)
 
 - 在标签上的某个属性和数据进行绑定使用 v-bind 
 
@@ -405,7 +405,7 @@ app.component来定义需要展示的dom内容
 
 ### 2.1 应用和组件的基础概念
 
-![image-20230508170007366](http://images.zlqit.com/bookshell/golang/assets/image-20230508170007366.png)
+![image-20230508170007366](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508170007366.png)
 
 提到数据连接层的时候就是vue的一个一个组件而已
 
@@ -525,7 +525,7 @@ template: 检测vue中是否存在template部分，如果有，就执行左边�
 
 
 
-![img](http://images.zlqit.com/bookshell/golang/assets/20210306172331184.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/20210306172331184.png)
 
 下面对每个生命周期函数进行详细讲解
 
@@ -645,13 +645,13 @@ template: 检测vue中是否存在template部分，如果有，就执行左边�
         },
 ```
 
-![image-20230508182736102](http://images.zlqit.com/bookshell/golang/assets/image-20230508182736102.png)
+![image-20230508182736102](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508182736102.png)
 
 
 
 update   //当数据发生变化，页面重新渲染后，会自动执行的函数
 
-![image-20230508184526076](http://images.zlqit.com/bookshell/golang/assets/image-20230508184526076.png)
+![image-20230508184526076](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508184526076.png)
 
 
 
@@ -664,7 +664,7 @@ update   //当数据发生变化，页面重新渲染后，会自动执行的函
 
 
 
-![image-20230508190156323](http://images.zlqit.com/bookshell/golang/assets/image-20230508190156323.png)
+![image-20230508190156323](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230508190156323.png)
 
 
 
@@ -777,13 +777,13 @@ hello, world  --> **hello, world**
 
 
 
-![image-20230510005306811](http://images.zlqit.com/bookshell/golang/assets/image-20230510005306811.png)
+![image-20230510005306811](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230510005306811.png)
 
 v-bind用法2 
 
 控制Input输入框的两种方式，第一种下面的方式就是不可输入状态
 
-![image-20230510005619291](http://images.zlqit.com/bookshell/golang/assets/image-20230510005619291.png)
+![image-20230510005619291](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230510005619291.png)
 
 能够输入在于data中的disable是否为true,如果为true，还是不生效 ,所以，这种就没有作用所以，需要使用v-bind进行绑定
 
@@ -830,7 +830,7 @@ vm变化不会更新dom展示变化的方式
 template: `<div v-once>{{message}}</div>` 
 ```
 
-![image-20230510010412515](http://images.zlqit.com/bookshell/golang/assets/image-20230510010412515.png)
+![image-20230510010412515](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230510010412515.png)
 
 
 
@@ -893,7 +893,7 @@ template: `<div v-once>{{message}}</div>`
 
 在点击的时候弹框
 
-![image-20230510011201953](http://images.zlqit.com/bookshell/golang/assets/image-20230510011201953.png)
+![image-20230510011201953](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230510011201953.png)
 
 注意：
 
@@ -1069,7 +1069,7 @@ v-bind:title  --->  可用用于缩写为    :title
 
 
 
-![image-20230510015231631](http://images.zlqit.com/bookshell/golang/assets/image-20230510015231631.png)
+![image-20230510015231631](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230510015231631.png)
 
 methods:    数据只要发生改变，则会重新执行一次，只要页面重新渲染，才会重新计算
 
@@ -1083,7 +1083,7 @@ watch: 可以实现对一些数据的监听，如果数据改变了，可以执�
 
 条件渲染
 
-![image-20230510225838991](http://images.zlqit.com/bookshell/golang/assets/image-20230510225838991.png)
+![image-20230510225838991](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230510225838991.png)
 
 
 
@@ -1103,7 +1103,7 @@ watch: 可以实现对一些数据的监听，如果数据改变了，可以执�
 
 
 
-![image-20230514142320533](http://images.zlqit.com/bookshell/golang/assets/image-20230514142320533.png)
+![image-20230514142320533](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230514142320533.png)
 
 
 
@@ -1179,7 +1179,7 @@ watch: 可以实现对一些数据的监听，如果数据改变了，可以执�
 </script>
 ```
 
-![image-20230514155501892](http://images.zlqit.com/bookshell/golang/assets/image-20230514155501892.png)
+![image-20230514155501892](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230514155501892.png)
 
 
 
@@ -1317,7 +1317,7 @@ Non-props属性
 
 
 
-![image-20230514165347730](http://images.zlqit.com/bookshell/golang/assets/image-20230514165347730.png)
+![image-20230514165347730](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230514165347730.png)
 
 
 

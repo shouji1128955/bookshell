@@ -6,7 +6,7 @@ Go语言 是Google公司 在2007开发一种静态强类型、编译型语言，
 
 Go语言以其近C的执行性能和近解析型语言的开发效率，以及近乎于完美的编译速度，已经风靡全球。很多人将Go语言称为21世纪的C语言，因为Go不仅拥有C的简洁和性能，而且针对多处理器系统应用程序的编程进行了优化，很好的提供了21世纪互联网环境下服务端开发的各种实用特性。
 
-![截屏2022-07-23 23.59.38](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2023.59.38-8591994.png)
+![截屏2022-07-23 23.59.38](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2023.59.38-8591994.png)
 
 ## Go语言的诞生
 
@@ -14,7 +14,7 @@ Go语言以其近C的执行性能和近解析型语言的开发效率，以及�
 
 Google 的技术大神们也在认真听讲座，其中就有Go语言的三个创作者，分别是： Robert Griesemer（罗伯特.格利茨默），Rob Pike（罗伯.派克），Ken Thompson（肯.汤普森）。
 
-![image-20210601130737782](http://images.zlqit.com/bookshell/golang/assets/image-20210601130737782.png)
+![image-20210601130737782](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210601130737782.png)
 
 > * Rob Pike（罗伯.派克）
 >
@@ -44,7 +44,7 @@ Google 的技术大神们也在认真听讲座，其中就有Go语言的三个�
 
 这就是 Go 语言名字的来源，自此之后 Robert、Rob 和 Ken 三个人开始在 Google 内部进行了研发，一直到了 2009 年，Go 正式开源了，Go 项目团队将 2009 年 11 月 10 日，即该语言正式对外开源的日字作为其官方生日。源代码最初托管在 http://code.google.com 上，之后几年才逐步的迁移到 GitHub 上。
 
-![截屏2022-07-24 07.34.20](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.34.20-8620011.png)
+![截屏2022-07-24 07.34.20](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.34.20-8620011.png)
 
 ## Go语言的版本
 
@@ -62,17 +62,17 @@ Google 的技术大神们也在认真听讲座，其中就有Go语言的三个�
 
 ## Go语言的优势
 
-![截屏2022-07-24 07.18.27](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.18.27-8618378.png)
+![截屏2022-07-24 07.18.27](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.18.27-8618378.png)
 
-![截屏2022-07-24 07.29.21](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.29.21-8618975.png)
+![截屏2022-07-24 07.29.21](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.29.21-8618975.png)
 
 ## Go语言的应用领域
 
-![截屏2022-07-24 07.56.06](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.56.06-8620580.png)
+![截屏2022-07-24 07.56.06](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-24%2007.56.06-8620580.png)
 
 使用Go的大型互联网公司
 
-![使用Go的互联网公司](http://images.zlqit.com/bookshell/golang/assets/%E4%BD%BF%E7%94%A8Go%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8-1622538812909.png)
+![使用Go的互联网公司](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E4%BD%BF%E7%94%A8Go%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8-1622538812909.png)
 
 Go语言的强项在于它适合用来开发网络并发方面的服务，比如消息推送、监控、容器等，所以在高并发的项目上大多数公司会优先选择 Golang 作为开发语言。另外一个应用就是对一些python，php或者java项目进行重构。
 
@@ -84,7 +84,7 @@ Go语言的强项在于它适合用来开发网络并发方面的服务，比如
 
 计算机是20世纪最先进的科学技术发明之一，对人类的生产活动和社会活动产生了极其重要的影响。它的应用领域从最初的军事科研应用扩展到社会的各个领域，已形成了规模巨大的计算机产业，带动了全球范围的技术进步，由此引发了深刻的社会变革。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/u=3569666097,3164525901&fm=253&fmt=auto&app=120&f=JPEG.jpeg)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/u=3569666097,3164525901&fm=253&fmt=auto&app=120&f=JPEG.jpeg)
 
 
 
@@ -94,7 +94,7 @@ Go语言的强项在于它适合用来开发网络并发方面的服务，比如
 
 其中，CPU包括运算器和控制器，相当于计算机的大脑，是计算机的运算核心和控制核心。
 
-![](http://images.zlqit.com/bookshell/golang/assets/cpu2.jpg)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/cpu2.jpg)
 
 (1) 运算器是用来进行数据运算加工的。
 
@@ -104,11 +104,11 @@ Go语言的强项在于它适合用来开发网络并发方面的服务，比如
 
 储存器可分为内储存器和外储存器两部分：内存属于内储存器，内存是CPU与硬盘之间的桥梁，只负责在CPU与硬盘之间做数据预存加速的功能。断电后即会被清除。输入设备的数据是从设备接口进去到端口缓冲器的，再经主板的输入输出总线（I/O总线）直接到CPU的，不经过内存。
 
-![image-20210412133337911](http://images.zlqit.com/bookshell/golang/assets/image-20210412133337911-1618215970205.png) 
+![image-20210412133337911](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210412133337911-1618215970205.png) 
 
 外储存器是指除计算机内存及CPU缓存以外的储存器，此类储存器一般断电后仍然能保存数据。常见的外存储器有硬盘、软盘、光盘、U盘等。
 
-![image-20210412133939847](http://images.zlqit.com/bookshell/golang/assets/image-20210412133939847-1618215970206.png)
+![image-20210412133939847](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210412133939847-1618215970206.png)
 
 * **输入输出设备**
 
@@ -116,14 +116,14 @@ Go语言的强项在于它适合用来开发网络并发方面的服务，比如
 
 ## 1.2、冯-诺伊曼计算机
 
-![image-20210406113742869](http://images.zlqit.com/bookshell/golang/assets/image-20210406113742869-1618215970206.png)
+![image-20210406113742869](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210406113742869-1618215970206.png)
 
 提到计算机，就不得不提及在计算机的发展史上做出杰出贡献的著名应用数学家冯诺依曼(Von Neumann，是他带领专家提出了一个全新的存储程序的通用电子计算机方案。这个方案规定了新机器由5个部分组成:**运算器、逻辑控制装置、存储器、输入和输出**。并描述了这5个部分的职能和相互关系。
 
 早期的ENIAC有一个致命的缺点就是程序与计算两分离。在埃历阿克ENIAC尚未投入运行前，冯·诺依曼就已开始着手起草一份新的设计报告，要对这台电子计算机进行脱胎换骨的改造。他把新机器的方案命名为“离散变量自动电子计算机”，英文缩写译音是“埃德瓦克”（EDVAC）。1945年6月，冯·诺依曼与戈德斯坦、勃克斯等人，为埃德瓦克方案联名发表了一篇长达101页纸洋洋万言的报告，即计算机史上著名的“101页报告”。这份报告奠定了现代电脑体系结构坚实的根基，直到今天，仍然被认为是现代电脑科学发展里程碑式的文献。报告明确规定出计算机的五大部件**（输入系统、输出系统、存储器、运算器、控制器）**，并用**二进制替代十进制运算**，大大方便了机器的电路设计。埃德瓦克方案的革命意义在于**“存储程序”**──程序也被当作数据存进了机器内部，以便电脑能自动依次执行指令，再也不必去接通什么线路。 
 　　人们后来把根据这一方案思想设计的机器统称为“诺依曼机”。自冯·诺依曼设计的埃德瓦克始，直到今天我们用“奔腾”芯片制作的多媒体计算机为止，电脑一代又一代的“传人”，大大小小千千万万台计算机，都没能够跳出诺依曼机的掌心。在这个意义上，冯·诺依曼是当之无愧的“计算机之父”。而
 
-![截屏2022-07-23 23.50.15](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2023.50.15-8591532.png)
+![截屏2022-07-23 23.50.15](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2023.50.15-8591532.png)
 
 > 总线（Bus）是计算机各种功能部件之间传送信息的公共通信干线，它是由[导线](https://baike.baidu.com/item/导线/1413914)组成的传输线束， 按照计算机所传输的信息种类，计算机的总线可以划分为[数据总线](https://baike.baidu.com/item/数据总线/272650)、[地址总线](https://baike.baidu.com/item/地址总线/4307936)和[控制总线](https://baike.baidu.com/item/控制总线/272568)，分别用来传输数据、数据地址和[控制信号](https://baike.baidu.com/item/控制信号/10329713)。总线是一种内部结构，它是`cpu`、内存、输入、[输出设备](https://baike.baidu.com/item/输出设备/10823333)传递信息的公用通道，[主机](https://baike.baidu.com/item/主机/455151)的各个部件通过总线相连接，[外部设备](https://baike.baidu.com/item/外部设备)通过相应的接口电路再与总线相连接，从而形成了[计算机硬件系统](https://baike.baidu.com/item/计算机硬件系统/8092895)。
 
@@ -145,7 +145,7 @@ Go语言的强项在于它适合用来开发网络并发方面的服务，比如
 
 计算机是不能理解高级语言的，更不能直接执行高级语言，它只能直接理解机器语言，所以使用任何高级语言编写的程序若想被计算机运行，都必须将其转换成计算机语言，也就是机器码。而这种转换的方式分为编译和解释两种。由此高级语言也分为编译型语言和解释型语言。
 
-![截屏2022-07-23 23.39.38](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2023.39.38-8590805.png)
+![截屏2022-07-23 23.39.38](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2023.39.38-8590805.png)
 
 * 编译型语言
 
@@ -174,27 +174,27 @@ Go语言的强项在于它适合用来开发网络并发方面的服务，比如
 -- go中文网：https://studygolang.com/dl
 ```
 
-![image-20220719153946581](http://images.zlqit.com/bookshell/golang/assets/image-20220719153946581-8216387.png)
+![image-20220719153946581](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220719153946581-8216387.png)
 
-![image-20220719153914987](http://images.zlqit.com/bookshell/golang/assets/image-20220719153914987-8216356.png)
+![image-20220719153914987](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220719153914987-8216356.png)
 
 ## 3.2、安装 for Mac
 
 ### 3.2.1、 mac系统下安装SDK
 
-![image-20220719160916965](http://images.zlqit.com/bookshell/golang/assets/image-20220719160916965.png)
+![image-20220719160916965](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220719160916965.png)
 
-![截屏2022-07-19 15.44.41](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-19%2015.44.41-8218367.png)
+![截屏2022-07-19 15.44.41](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-19%2015.44.41-8218367.png)
 
-![截屏2022-07-19 15.45.31](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-19%2015.45.31-8218367.png)
+![截屏2022-07-19 15.45.31](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-19%2015.45.31-8218367.png)
 
 安装完成以后可以使用终端软件(例如iTerm)中输入go version查看Go编译器的版本信息
 
-![image-20220720133017365](http://images.zlqit.com/bookshell/golang/assets/image-20220720133017365-8295019.png)
+![image-20220720133017365](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220720133017365-8295019.png)
 
 > mac系统下会默认安装到`GOROOT="/usr/local/go"`中，通过go env可以查看
 
-![image-20220720133041195](http://images.zlqit.com/bookshell/golang/assets/image-20220720133041195-8295042.png)
+![image-20220720133041195](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220720133041195-8295042.png)
 
 ### 3.2.2、 mac系统下配置GOPATH
 
@@ -222,27 +222,27 @@ source ~/.bash_profile
 
 双击我们下载好的Go语言开发包即可启动安装程序，如下图所示，这是Go语言的用户许可协议，无需管它，直接勾选“I accept ...”然后点击“Next”即可。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps1-8295805-8298119.png) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps1-8295805-8298119.png) 
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps2-8298130-8298133.png) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps2-8298130-8298133.png) 
 
 在 Windows 系统下Go语言开发包会默认安装到 C 盘的 Go 目录下，推荐在这个目录下安装，使用起来较为方便。当然，你也可以选择其他的安装目录，确认无误后点击“Next”，如下图所示：
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps3-8298145-8298146.png) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps3-8298145-8298146.png) 
 
 
 Go语言开发包的安装没有其他需要设置的选项，点击“Install”即可开始安装，如下图所示：
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps4-8298156-8298158.png) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps4-8298156-8298158.png) 
 
 等待程序完成安装，然后点击“Finish”退出安装程序。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps5-8298167-8298168.png) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps5-8298167-8298168.png) 
 
 
 安装完成后，在我们所设置的安装目录下将生成一些目录和文件，如下图所示：
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps6-8296013-8298175-8298179.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps6-8296013-8298175-8298179.png)
 
 > 在默认情况下，win系统下Go 将会被安装在目录 c:\go 下，但如果你在安装过程中修改安装目录，则需要手动修改所有的环境变量的值。
 >
@@ -267,15 +267,15 @@ Go语言开发包的安装没有其他需要设置的选项，点击“Install�
 开发包安装完成后，我们还需要配置一下GOPATH 环境变量，之后才可以使用Go语言进行开发。GOPATH是开发人员编写Go程序的工作空间路径，也就是存放Go代码的地方。
 在桌面或者资源管理器右键“此电脑”（或者“我的电脑”）→“属性”→“高级系统设置”→“环境变量”，如下图所示。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps7.jpg) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps7.jpg) 
 
 在弹出的菜单里找到 GOPATH 对应的选项点击编辑之后就可以修改了，没有的话可以选择新建，并将变量名填写为 GOPATH，变量值设置为任意目录均可（尽量选择空目录），例如 F:\GoWork。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wps8.jpg) 
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wps8.jpg) 
 
 GOPATH对应创建的文件夹中里面，手动创建如下3个目录
 
-![image-20210315120607129](http://images.zlqit.com/bookshell/golang/assets/image-20210315120607129-8298550.png)
+![image-20210315120607129](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210315120607129-8298550.png)
 
 ```text
 src    存储go的源代码（需要我们自己手动创建）
@@ -296,7 +296,7 @@ func main() {
 }
 ```
 
-![image-20220722120013307](http://images.zlqit.com/bookshell/golang/assets/image-20220722120013307-8462415.png)
+![image-20220722120013307](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220722120013307-8462415.png)
 
 > 1. 程序没有涉及到自定义包调用时可以放在电脑任何位置
 > 2. 为了以后方便管理，我们暂时统一放在gopath的src下
@@ -359,21 +359,21 @@ GoLand是Jetbrains公司推出专为Go开发人员构建的跨平台IDE，可以
 
 下载地址：https://www.jetbrains.com/go/download/#section=windows
 
-![截屏2022-07-20 15.25.45](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.25.45-8301995.png)
+![截屏2022-07-20 15.25.45](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.25.45-8301995.png)
 
 下载完成之后便可以进行安装了
 
-![截屏2022-07-20 18.39.14](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.14.png)
+![截屏2022-07-20 18.39.14](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.14.png)
 
-![截屏2022-07-20 18.39.26](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.26.png)
+![截屏2022-07-20 18.39.26](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.26.png)
 
-![截屏2022-07-20 18.39.46](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.46.png)
+![截屏2022-07-20 18.39.46](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.46.png)
 
-![截屏2022-07-20 18.39.59](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.59.png)
+![截屏2022-07-20 18.39.59](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.39.59.png)
 
-![截屏2022-07-20 18.43.07](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.43.07.png)
+![截屏2022-07-20 18.43.07](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.43.07.png)
 
-![截屏2022-07-20 18.44.16](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.44.16.png)
+![截屏2022-07-20 18.44.16](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2018.44.16.png)
 
 因为GoLand是收费的IDE，同时也提供了30天免费试用的方式。如果经济能力允许的话，可以从指定渠道购买正版GoLand.
 GoLand提供了Jetbrains Account,Activition Code和License Server三种激活方式，使用前必须激活或者选择免费试用
@@ -381,7 +381,7 @@ GoLand提供了Jetbrains Account,Activition Code和License Server三种激活方
 
 > 免费试用需要点击log in，进行账户注册（在PC端完成）,然后登陆，即可试用30天
 
-![截屏2022-07-20 15.45.56](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.45.56-8303165.png)
+![截屏2022-07-20 15.45.56](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.45.56-8303165.png)
 
 此时可以选择New Project在指定的路径创建新的项目目录或者选择Open打开已经存在的项目目录，进行编辑。
 
@@ -389,21 +389,21 @@ GoLand提供了Jetbrains Account,Activition Code和License Server三种激活方
 
 当GoLand启动后，便可以使用它来编写Go程序了。首先选择New Project创建一个项目。然后设置项目路径和GOROOT
 
-![截屏2022-07-20 15.49.47](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.49.47-8303415.png)
+![截屏2022-07-20 15.49.47](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.49.47-8303415.png)
 
-![截屏2022-07-20 15.55.22](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.55.22-8303758.png)
+![截屏2022-07-20 15.55.22](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2015.55.22-8303758.png)
 
 然后点击create创建。
 
-![image-20220720155651723](http://images.zlqit.com/bookshell/golang/assets/image-20220720155651723-8303813.png)
+![image-20220720155651723](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220720155651723-8303813.png)
 
 创建文件和文件夹：
 
-![截屏2022-07-20 16.01.55](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2016.01.55-8304149.png)
+![截屏2022-07-20 16.01.55](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2016.01.55-8304149.png)
 
 goland安装好后没有编译器的单独配置go编译器路径：
 
-![截屏2022-07-20 16.04.55](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2016.04.55-8304361.png)
+![截屏2022-07-20 16.04.55](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-20%2016.04.55-8304361.png)
 
 ### 3.5.3、IDE的快捷键
 
@@ -422,11 +422,11 @@ goland安装好后没有编译器的单独配置go编译器路径：
 
 ### 3.5.4、控制台折叠多余信息
 
-![image-20220722112303208](http://images.zlqit.com/bookshell/golang/assets/image-20220722112303208-8460185.png)
+![image-20220722112303208](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220722112303208-8460185.png)
 
-![image-20220722112534240](http://images.zlqit.com/bookshell/golang/assets/image-20220722112534240-8460335.png)
+![image-20220722112534240](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220722112534240-8460335.png)
 
-![image-20220722112629909](http://images.zlqit.com/bookshell/golang/assets/image-20220722112629909-8460391.png)
+![image-20220722112629909](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220722112629909-8460391.png)
 
 # 四、基础语法
 
@@ -436,7 +436,7 @@ goland安装好后没有编译器的单独配置go编译器路径：
 
 > 注释只是为了提高可读性，不会被计算机编译。
 
-![image-20220105164023755](http://images.zlqit.com/bookshell/golang/assets/image-20220105164023755-16413720250637.png)
+![image-20220105164023755](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220105164023755-16413720250637.png)
 
 ## 4.2、变量
 
@@ -591,7 +591,7 @@ continue     for              import         return            var
 
 在 Go 程序中，一行代表一个语句结束。每个语句不需要像 C 家族中的其它语言一样以分号 ; 结尾，因为这些工作都将由 Go 编译器自动完成。如果你打算将多个语句写在同一行，它们则必须使用 ; 人为区分（不建议这样写）。
 
-![image-20220105163143091](http://images.zlqit.com/bookshell/golang/assets/image-20220105163143091-16413715041204.png)
+![image-20220105163143091](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220105163143091-16413715041204.png)
 
 ```go
 //var name = "yuan";var age = 18 // 不推荐
@@ -621,7 +621,7 @@ fmt.Println(age)
 
 字节与位的关系：1Byte=8bit。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/9152699.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/9152699.png)
 
 * **整形类型** 
 
@@ -749,7 +749,7 @@ fmt.Println(s)
 
 字符串在内存中是一段连续存储空间
 
-![截屏2022-07-23 20.58.43](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2020.58.43-8581139.png)
+![截屏2022-07-23 20.58.43](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-23%2020.58.43-8581139.png)
 
 > 注意：
 >
@@ -1016,7 +1016,7 @@ Go语言中只有强制类型转换，没有隐式类型转换。该语法只能
 
 ### 4.5.5、运算符优先级
 
-![image-20210625132209344](http://images.zlqit.com/bookshell/golang/assets/youxianji.png)
+![image-20210625132209344](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/youxianji.png)
 
 ```go
 
@@ -1336,7 +1336,7 @@ fmt.Println(a, b, c, d, e)
 
 这里最简单最常用的就是顺序结构，即语句从上至下一一执行。
 
-![image-20210318154636648](http://images.zlqit.com/bookshell/golang/assets/image-20210318154636648.png)
+![image-20210318154636648](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210318154636648.png)
 
 ## 5.1、分支语句
 
@@ -1352,7 +1352,7 @@ if 布尔表达式 {  // 注意左花括号必须与表达式同行
 }
 ```
 
-![image-20211216155050847](http://images.zlqit.com/bookshell/golang/assets/image-20211216155050847-16396410524811.png)
+![image-20211216155050847](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20211216155050847-16396410524811.png)
 
 ```go
 var username,password string
@@ -1374,7 +1374,7 @@ if username == "yuan" && password=="123"{
 
 双分支语句顾名思义，二条分支二选一执行！
 
-![image-20210318171626403](http://images.zlqit.com/bookshell/golang/assets/image-20210318171626403.png)
+![image-20210318171626403](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210318171626403.png)
 
 ```golang
 var age int
@@ -1408,7 +1408,7 @@ if username == "yuan" && password=="123"{
 
 多分支即从比双分支更多的分支选择一支执行。
 
-![image-20210318173151614](http://images.zlqit.com/bookshell/golang/assets/image-20210318173151614.png)
+![image-20210318173151614](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210318173151614.png)
 
 ```go
 package main
@@ -1436,7 +1436,7 @@ func main() {
 
 练习：根据用户输入的生日判断星座
 
-![image-20220730142158298](http://images.zlqit.com/bookshell/golang/assets/image-20220730142158298-9162120.png)
+![image-20220730142158298](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220730142158298-9162120.png)
 
 ```golang
 var month, day int
@@ -1558,7 +1558,7 @@ switch var {
 }
 ```
 
-![image-20210319120205199](http://images.zlqit.com/bookshell/golang/assets/image-20210319120205199.png)
+![image-20210319120205199](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210319120205199.png)
 
 switch语句也是多分支选择语句，执行哪一代码块，取决于switch后的值与哪一case值匹配成功，则执行该case后的代码块。
 
@@ -1642,7 +1642,7 @@ switch{
 
 与其它主流编程语言不同的的是，Go语言中的循环语句只支持 for 关键字，而不支持 while 和 do-while 结构。
 
-![image-20210319125002230](http://images.zlqit.com/bookshell/golang/assets/image-20210319125002230.png)
+![image-20210319125002230](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210319125002230.png)
 
 ### 5.2.1、for循环
 
@@ -1674,7 +1674,7 @@ for count > 0 { // 条件判断
 fmt.Println("end")
 ```
 
-![截屏2022-07-30 13.05.14](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-30%2013.05.14-9157538.png)
+![截屏2022-07-30 13.05.14](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-30%2013.05.14-9157538.png)
 
 > 练习：如何打印1-100
 
@@ -1823,7 +1823,7 @@ for i := 0; i < 10; i++ {
 }
 ```
 
-![WX20220730-165349@2x](http://images.zlqit.com/bookshell/golang/assets/WX20220730-165349@2x-9171400.png)
+![WX20220730-165349@2x](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/WX20220730-165349@2x-9171400.png)
 
 #### continue语句
 
@@ -1838,7 +1838,7 @@ for i := 0; i < 10; i++ {
 	}
 ```
 
-![WX20220730-170000@2x](http://images.zlqit.com/bookshell/golang/assets/WX20220730-170000@2x-9171740.png)
+![WX20220730-170000@2x](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/WX20220730-170000@2x-9171740.png)
 
 > 案例: 计算 1 - 2 + 3 - 4 + ... + 99 中除了88以外所有数的总和？
 
@@ -1868,7 +1868,7 @@ for i := 0; i < 5; i++ {
 }
 ```
 
-![截屏2022-07-30 16.41.21](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-30%2016.41.21-9170498.png)
+![截屏2022-07-30 16.41.21](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-30%2016.41.21-9170498.png)
 
 #### 关联嵌套
 
@@ -1921,7 +1921,7 @@ fmt.Println("p的值：", p)
 fmt.Println("p地址对应的值", *p)
 ```
 
-![image-20210607171319554](http://images.zlqit.com/bookshell/golang/assets/image-20210607171319554.png)
+![image-20210607171319554](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210607171319554.png)
 
 关于地址的格式化打印
 
@@ -1994,7 +1994,7 @@ var p *int
 	fmt.Println(*p) // 10
 ```
 
-![截屏2022-07-30 23.15.24](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-30%2023.15.24-9194168.png)
+![截屏2022-07-30 23.15.24](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-07-30%2023.15.24-9194168.png)
 
 > make返回的还是引⽤类型本⾝；⽽new返回的是指向类型的指针。后面再详细介绍
 
@@ -2018,7 +2018,7 @@ var ages [5]int
 fmt.Println(ages,reflect.TypeOf(ages)) // [0 0 0 0 0] [5]int
 ```
 
-![截屏2022-08-02 12.12.25](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-02%2012.12.25-9413557.png)
+![截屏2022-08-02 12.12.25](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-02%2012.12.25-9413557.png)
 
 > 在计算机语言中数组是非常重要的集合类型，大部分计算机语言中数组具有如下三个基本特性：
 >
@@ -2058,7 +2058,7 @@ ages[4] = 27
 fmt.Println(ages) // [23 24 25 26 27]
 ```
 
-![截屏2022-08-02 12.19.49](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-02%2012.19.49-9414007.png)
+![截屏2022-08-02 12.19.49](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-02%2012.19.49-9414007.png)
 
 #### 初始化方式2：声明并赋值
 
@@ -2202,7 +2202,7 @@ type Slice struct {
 }
 ```
 
-![截屏2022-08-13 17.10.32](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-13%2017.10.32-0381871.png)
+![截屏2022-08-13 17.10.32](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-13%2017.10.32-0381871.png)
 
 举例：
 
@@ -2361,7 +2361,7 @@ fmt.Println(b)
 	fmt.Println(emps4) // 此时底层数组已经发生变化
 ```
 
-![截屏2022-08-13 18.45.44](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-13%2018.45.44-0387563.png)
+![截屏2022-08-13 18.45.44](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-13%2018.45.44-0387563.png)
 
 **扩容机制**
 
@@ -2385,7 +2385,7 @@ fmt.Println(s3)
 fmt.Println(arr)
 ```
 
-![image-20240331182119940](http://images.zlqit.com/bookshell/golang/assets/image-20240331182119940.png)
+![image-20240331182119940](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20240331182119940.png)
 
 
 
@@ -2822,7 +2822,7 @@ type bmap struct {
 | overflow | 指向的`hmap.extra.overflow`溢出桶里的`bmap`，上面的字段`topbits`、`keys`、`elems`长度为8，最多存8组键值对，存满了就往指向的这个`bmap`里存 |
 | pad      | 对齐内存使用的，不是每个bmap都有会这个字段，需要满足一定条件 |
 
-![截屏2022-08-06 15.29.13](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-06%2015.29.13-9770980.png)
+![截屏2022-08-06 15.29.13](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-06%2015.29.13-9770980.png)
 
 #### （1）插入key-value
 
@@ -4026,7 +4026,7 @@ func main() {
 }
 ```
 
-![img](http://images.zlqit.com/bookshell/golang/assets/digui.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/digui.png)
 
 #### 案例2
 
@@ -4055,21 +4055,21 @@ func main() {
 
 ```
 
-![image-20210626185959544](http://images.zlqit.com/bookshell/golang/assets/image20210626185959544.png)
+![image-20210626185959544](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image20210626185959544.png)
 
 ## 7.12、章节练习
 
 **添加客户：**
 
-![截屏2022-08-04 16.09.01](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-04%2016.09.01.png)
+![截屏2022-08-04 16.09.01](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-04%2016.09.01.png)
 
 **查看客户和删除客户：**
 
-![截屏2022-08-04 16.09.40](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-04%2016.09.40.png)
+![截屏2022-08-04 16.09.40](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-04%2016.09.40.png)
 
 **修改客户：**
 
-![截屏2022-08-04 16.12.27](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-04%2016.12.27.png)
+![截屏2022-08-04 16.12.27](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-08-04%2016.12.27.png)
 
 ```go 
 package main
@@ -4255,13 +4255,13 @@ func main() {
 
 ## 8.1、编码
 
-![image-20210414160556205](http://www.yuan316.com/post/Python%E5%9F%BA%E7%A1%8http://images.zlqit.com/bookshell/golang/assets/image-20210414160556205.png)
+![image-20210414160556205](http://www.yuan316.com/post/Python%E5%9F%BA%E7%A1%8https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210414160556205.png)
 
 - `ASCII`表
 
 众所周知，计算机起源于美国，英文只有26个字符，算上其他所有特殊符号也不会超过128个。字节是计算机的基本储存单位，一个字节(bytes)包括八个比特位(bit),能够表示出256个二进制数字，所以美国人在这里只是用到了一个字节的前七位即127个数字来对应了127个具体字符，而这张对应表就是ASCII码字符编码表，简称ASCII表。后来为了能够让计算机识别拉丁文，就将一个字节的最高位也应用了，这样就多扩展出128个二进制数字来对应新的符号。这张对应表因为是在ASCII表的基础上扩展的最高位，因此称为扩展ASCII表。到此位置，一个字节能表示的256个二进制数字都有了特殊的符号对应。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/src=http%253A%252F%252Fimages2018.cnblogs.com%252Fblog%252F1316095%252F201803%252F1316095-20180330193843413-618697280.png&refer=http%253A%252F%252Fimages2018.cnblogs-0991323.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/src=http%253A%252F%252Fimages2018.cnblogs.com%252Fblog%252F1316095%252F201803%252F1316095-20180330193843413-618697280.png&refer=http%253A%252F%252Fimages2018.cnblogs-0991323.png)
 
 - `GBK`编码
 
@@ -4309,7 +4309,7 @@ go语⾔的string是⼀种数据类型，这个数据类型占⽤16字节空间�
 
 ### （1）字符串的存储原理
 
-![img](http://images.zlqit.com/bookshell/golang/assets/720430-20181129100333862-587648083.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/720430-20181129100333862-587648083.png)
 
 string 数据结构：源码包`src/runtime/string.go:stringStruct`定义了string的数据结构：
 
@@ -4808,7 +4808,7 @@ func main() {
 
 ```
 
-![截屏2022-09-03 22.12.24](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-03%2022.12.24-2214367.png)
+![截屏2022-09-03 22.12.24](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-03%2022.12.24-2214367.png)
 
 之前我们学习过值类型和引用类型，知道值类型是变量对应的地址直接存储值，而引用类型是变量对应地址存储的是地址。因为结构体因为是值类型，所以p的地址与存储的第一个值的地址是相同的，而后面每一个成员变量的地址是连续的。
 
@@ -5463,7 +5463,7 @@ func main() {
 
 如下图所示：使用手机扫描二维码支付时，二维码并不知道客户是通过何种方式进行支付，只有通过二维码后才能判断是走哪种支付方式执行对应流程。
 
-![](http://images.zlqit.com/bookshell/golang/assets/v2-3b8a27eac265e7c465e4b2c6643a3f1e_720w.png)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/v2-3b8a27eac265e7c465e4b2c6643a3f1e_720w.png)
 
 ```go
 // 支付抽象类或者接口
@@ -6178,7 +6178,7 @@ func main() {
 
 # 十一、包管理
 
-![Go语言学习笔记03 -- 内置基本数据类型之字符串](http://images.zlqit.com/bookshell/golang/assets/v2-1e7d15fd7435e57893daf061545386b6_1440w-2212194.jpg)
+![Go语言学习笔记03 -- 内置基本数据类型之字符串](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/v2-1e7d15fd7435e57893daf061545386b6_1440w-2212194.jpg)
 
 ## 11.1、package
 
@@ -6200,7 +6200,7 @@ Go 程序首先在 `GOROOT/src` 目录中寻找包目录，如果没有找到，
 
 目录结构
 
-![image-20220917232517408](http://images.zlqit.com/bookshell/golang/assets/image-20220917232517408.png)
+![image-20220917232517408](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220917232517408.png)
 
 `db`包
 
@@ -6340,7 +6340,7 @@ init 函数通常被用来：
 >
 > 4、`init()`函数没有参数也没有返回值。 `init()`函数在程序运行时自动被调用执行，不能在代码中主动调用它。
 
-![image-20210324210805734](http://images.zlqit.com/bookshell/golang/assets/image-20210324210805734.png)
+![image-20210324210805734](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210324210805734.png)
 
 ## 11.2、go module
 
@@ -6398,9 +6398,9 @@ go 1.16
 
 （6）执行命令`go mod vendor`生成vendor文件夹，用来区分某些库的不同版本。该文件夹下将会放置你`go.mod`文件描述的依赖包，文件夹下同时还有一个文件`modules.txt`，它是你整个工程的所有模块。在执行这条命令之前，如果你工程之前有vendor目录，应该先进行删除。同理`go mod vendor -v`会将添加到vendor中的模块打印出来；
 
-![image-20220917233933903](http://images.zlqit.com/bookshell/golang/assets/image-20220917233933903-3429178.png)
+![image-20220917233933903](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220917233933903-3429178.png)
 
-![image-20220918001221237](http://images.zlqit.com/bookshell/golang/assets/image-20220918001221237-3431142.png)
+![image-20220918001221237](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220918001221237-3431142.png)
 
 > 内部包调用从初始化模块名`go.mod`所在的目录开始查找，所以导入`api`包：`import "xxx/api"`
 >
@@ -6409,13 +6409,13 @@ go 1.16
 
 将客户关系管理系统改为包管理版本
 
-![截屏2022-09-17 21.46.02](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-17%2021.46.02.png)
+![截屏2022-09-17 21.46.02](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-17%2021.46.02.png)
 
 ### 版本1
 
 目录结构：
 
-![截屏2022-09-17 18.07.45](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-17%2018.07.45.png)
+![截屏2022-09-17 18.07.45](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-17%2018.07.45.png)
 
 `model`包的`customer.go`
 
@@ -6691,7 +6691,7 @@ func main() {
 
 目录结构：
 
-![截屏2022-09-17 21.38.00](http://images.zlqit.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-17%2021.38.00.png)
+![截屏2022-09-17 21.38.00](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E6%88%AA%E5%B1%8F2022-09-17%2021.38.00.png)
 
 `model`包的`customer.go`
 
@@ -7055,7 +7055,7 @@ func main() {
 
 端口（Port）是一个虚拟的、逻辑上的概念。可以将端口理解为一道门，数据通过这道门流入流出，每道门有不同的编号，就是端口号。如下图所示：
 
-![img](http://images.zlqit.com/bookshell/golang/assets/1-1510101TT1523.jpg)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1-1510101TT1523.jpg)
 
 #### （3）协议
 
@@ -7093,7 +7093,7 @@ OSI 模型把网络通信的工作分为 7 层，从下到上分别是物理层�
 
 当另一台计算机接收到数据包时，会从网络接口层再一层一层往上传输，每传输一层就拆开一层包装，直到最后的应用层，就得到了最原始的数据，这才是程序要使用的数据。
 
-![img](http://images.zlqit.com/bookshell/golang/assets/wx1.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/wx1.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg)
 
 #### （2）TCP报文格式
 
@@ -7107,7 +7107,7 @@ TCP建立连接时要传输三个数据包，俗称三次握手（Three-way Hand
 > - [Shake 2] 套接字B：“好的，我这边已准备就绪。”
 > - [Shake 3] 套接字A：“谢谢你受理我的请求。”
 
-![img](http://images.zlqit.com/bookshell/golang/assets/1-151020115S23R.jpg)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1-151020115S23R.jpg)
 
 > 1) 序号：Seq（Sequence Number）序号占32位，用来标识从计算机A发送到计算机B的数据包的序号，计算机发送数据时对此进行标记。
 >
@@ -7127,7 +7127,7 @@ TCP建立连接时要传输三个数据包，俗称三次握手（Three-way Hand
 
 使用 connect() 建立连接时，客户端和服务器端会相互发送三个数据包，请看下图：
 
-![img](http://images.zlqit.com/bookshell/golang/assets/1-151020132J32G.jpg)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1-151020132J32G.jpg)
 
 客户端调用 socket() 创建套接字后，因为没有建立连接，所以套接字处于`CLOSED`状态；服务器端调用 listen() 函数后，套接字进入`LISTEN`状态，开始监听客户端请求。这个时候，客户端开始发起请求：
 
@@ -7156,7 +7156,7 @@ TCP建立连接时要传输三个数据包，俗称三次握手（Three-way Hand
 
 下图演示了客户端主动断开连接的场景：
 
-![img](http://images.zlqit.com/bookshell/golang/assets/1-15102015224Wc.jpg)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1-15102015224Wc.jpg)
 
 建立连接后，客户端和服务器都处于`ESTABLISED`状态。这时，客户端发起断开连接的请求：
 
@@ -7194,9 +7194,9 @@ TIME_WAIT 要等待 2MSL 才会进入 CLOSED 状态。ACK 包到达服务器需�
 socket 的原意是“插座”，在计算机通信领域，socket 被翻译为“套接字”，它是计算机之间进行通信的一种约定或一种方式。通过 socket 这种约定，一台计算机可以接收其他计算机的数据，也可以向其他计算机发送数据。
 我们把插头插到插座上就能从电网获得电力供应，同样，为了与远程计算机进行数据传输，需要连接到因特网，而 socket 就是用来连接到因特网的工具。
 
-![socket是什么？](http://images.zlqit.com/bookshell/golang/assets/1-1Z1231A00X07.jpg)
+![socket是什么？](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1-1Z1231A00X07.jpg)
 
-![socket](http://images.zlqit.com/bookshell/golang/assets/socket1625716026714.png)
+![socket](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/socket1625716026714.png)
 
 ### 13.3.2、socket缓冲区与阻塞
 
@@ -7206,7 +7206,7 @@ socket 的原意是“插座”，在计算机通信领域，socket 被翻译为
 
 TCP协议独立于 write()/send() 函数，数据有可能刚被写入缓冲区就发送到网络，也可能在缓冲区中不断积压，多次写入的数据被一次性发送到网络，这取决于当时的网络情况、当前线程是否空闲等诸多因素，不由程序员控制。read()/recv() 函数也是如此，也从输入缓冲区中读取数据，而不是直接从网络中读取。  
 
-![image-20210628165851154](http://images.zlqit.com/bookshell/golang/assets/image-20210628165851154.png)
+![image-20210628165851154](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210628165851154.png)
 
 这些I/O缓冲区特性可整理如下：
 
@@ -7635,7 +7635,7 @@ func main() {
 
 HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于万维网（WWW:World Wide Web ）服务器与本地浏览器之间传输超文本的传送协议。HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。它于1990年提出，经过几年的使用与发展，得到不断地完善和扩展。HTTP协议工作于客户端-服务端架构为上。浏览器作为HTTP客户端通过URL向HTTP服务端即WEB服务器发送所有请求。Web服务器根据接收到的请求后，向客户端发送响应信息。
 
-![1588750-20190118162356278-1999323050](http://images.zlqit.com/bookshell/golang/assets/1588750-20190118162356278-1999323050-1624707725533.png)
+![1588750-20190118162356278-1999323050](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1588750-20190118162356278-1999323050-1624707725533.png)
 
 #### （2） http协议特性
 
@@ -7647,7 +7647,7 @@ http协议是基于TCP/IP协议之上的应用层协议。
 
 HTTP协议规定,请求从客户端发出,最后服务器端响应该请求并 返回。换句话说,肯定是先从客户端开始建立通信的,服务器端在没有 接收到请求之前不会发送响应
 
-![1588750-20190118162456025-57507097](http://images.zlqit.com/bookshell/golang/assets/1588750-20190118162456025-57507097-1624707725533.png)
+![1588750-20190118162456025-57507097](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1588750-20190118162456025-57507097-1624707725533.png)
 
 ##### (3) 无状态保存
 
@@ -7657,7 +7657,7 @@ HTTP是一种不保存状态,即无状态(stateless)协议。HTTP协议 自身�
 
 可是,随着Web的不断发展,因无状态而导致业务处理变得棘手 的情况增多了。比如,用户登录到一家购物网站,即使他跳转到该站的 其他页面后,也需要能继续保持登录状态。针对这个实例,网站为了能 够掌握是谁送出的请求,需要保存用户的状态。HTTP/1.1虽然是无状态协议,但为了实现期望的保持状态功能, 于是引入了Cookie技术。有了Cookie再用HTTP协议通信,就可以管 理状态了。有关Cookie的详细内容稍后讲解。
 
-![1588750-20190118162508678-1256775662](http://images.zlqit.com/bookshell/golang/assets/1588750-20190118162508678-1256775662-1624707725533.png)
+![1588750-20190118162508678-1256775662](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1588750-20190118162508678-1256775662-1624707725533.png)
 
 ##### (4) 无连接
 
@@ -7669,7 +7669,7 @@ http协议包含由浏览器发送数据到服务器需要遵循的请求协议�
 
 ##### (1) 请求协议
 
-![1588750-20190118162757959-1733737382](http://images.zlqit.com/bookshell/golang/assets/1588750-20190118162757959-1733737382-1624707725534.png)
+![1588750-20190118162757959-1733737382](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1588750-20190118162757959-1733737382-1624707725534.png)
 
 > 请求方式: get与post请求
 >
@@ -7678,9 +7678,9 @@ http协议包含由浏览器发送数据到服务器需要遵循的请求协议�
 
 ##### (2) 响应协议
 
-![1588750-20190118162740806-776466524](http://images.zlqit.com/bookshell/golang/assets/1588750-20190118162740806-776466524-1624707725534.png)
+![1588750-20190118162740806-776466524](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1588750-20190118162740806-776466524-1624707725534.png)
 
-响应状态码：状态码的职 是当客户端向服务器端发送请求时, 返回的请求 结果。借助状态码,用户可以知道服务器端是正常 理了请求,还是出 现了 。状态码如200 OK,以3位数字和原因 成。数字中的 一位指定了响应 别,后两位无分 。响应 别有以5种。![1588750-20190118162555828-580941844](http://images.zlqit.com/bookshell/golang/assets/1588750-20190118162555828-580941844-1617091801039-1624707725534.png)
+响应状态码：状态码的职 是当客户端向服务器端发送请求时, 返回的请求 结果。借助状态码,用户可以知道服务器端是正常 理了请求,还是出 现了 。状态码如200 OK,以3位数字和原因 成。数字中的 一位指定了响应 别,后两位无分 。响应 别有以5种。![1588750-20190118162555828-580941844](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/1588750-20190118162555828-580941844-1617091801039-1624707725534.png)
 
 > 图片来自于《图解HTTP》
 
@@ -7750,9 +7750,9 @@ func main() {
 
 ### 14.1.1、操作系统的进程、线程发展
 
-![](http://images.zlqit.com/bookshell/golang/assets/QQ%E6%88%AA%E5%9B%BE20201126132525.png)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/QQ%E6%88%AA%E5%9B%BE20201126132525.png)
 
-![](http://images.zlqit.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%913.png)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%913.png)
 
 ### 14.1.2、进程概念
 
@@ -7808,7 +7808,7 @@ func main() {
 
 我们知道线程是程序执行的最小单位，也是任务执行的最小单位。在早期只有进程的操作系统中，进程有五种状态，创建、就绪、运行、阻塞(等待)、退出。早期的进程相当于现在的只有单个线程的进程，那么现在的多线程也有五种状态，现在的多线程的生命周期与早期进程的生命周期类似。
 
-![](http://images.zlqit.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%917.png)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%917.png)
 
 ```python 
 线程的生命周期
@@ -7840,7 +7840,7 @@ func main() {
 
 将多个用户级线程映射到一个内核级线程，线程管理在用户空间完成。此模式中，用户级线程对操作系统不可见（即透明）。
 
-![](http://images.zlqit.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%918.jpeg)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%918.jpeg)
 
 优点：
 这种模型的好处是线程上下文切换都发生在用户空间，避免的模态切换（mode switch），从而对于性能有积极的影响。
@@ -7854,7 +7854,7 @@ func main() {
 
 将每个用户级线程映射到一个内核级线程。
 
-![](http://images.zlqit.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%919.jpeg)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%919.jpeg)
 
 每个线程由内核调度器独立的调度，所以如果一个线程阻塞则不影响其他的线程。
 优点：在多核处理器的硬件的支持下，内核空间线程模型支持了真正的并行，当一个线程被阻塞后，允许另一个线程继续执行，所以并发能力较强。
@@ -7865,7 +7865,7 @@ func main() {
 
 内核线程和用户线程的数量比为 M : N，内核用户空间综合了前两种的优点。
 
-![](http://images.zlqit.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%9110.jpeg)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/%E5%B9%B6%E5%8F%9110.jpeg)
 
 一个进程中可以对应多个内核级线程，但是进程中的线程不和内核线程一一对应；这种线程模型会先创建多个内核级线程，然后用自身的用户级线程去对应创建的多个内核级线程，自身的用户级线程需要本身程序去调度，内核级的线程交给操作系统内核去调度。这使得大部分的线程上下文切换都发生在用户空间，而多个内核线程又可以充分利用处理器资源。
 
@@ -8408,7 +8408,7 @@ func main() {
   }
 ```
 
-![img](http://images.zlqit.com/bookshell/golang/assets/17528797-1430c1feeed649c3.png)
+![img](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/17528797-1430c1feeed649c3.png)
 
 han内部实现了一个环形队列作为其缓冲区，队列的长度是创建chan时指定的。
 
@@ -8416,7 +8416,7 @@ han内部实现了一个环形队列作为其缓冲区，队列的长度是创�
 
 下图展示了一个可缓存6个元素的channel示意图：
 
-![image-20220304120254478](http://images.zlqit.com/bookshell/golang/assets/image-20220304120254478-16463665762254.png)
+![image-20220304120254478](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20220304120254478-16463665762254.png)
 
 - dataqsiz指示了队列长度为6，即可缓存6个元素；
 - buf指向队列的内存，队列中还剩余两个元素；
@@ -8566,9 +8566,9 @@ func main()  {
 *  无缓冲的通道是指在接收前没有能力保存任何值的通道
 *  有缓冲的通道是一种在被接收前能存储一个或者多个值的通道
 
-![](http://images.zlqit.com/bookshell/golang/assets/QQ%E6%88%AA%E5%9B%BE20201113180512.png)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/QQ%E6%88%AA%E5%9B%BE20201113180512.png)
 
-![](http://images.zlqit.com/bookshell/golang/assets/QQ%E6%88%AA%E5%9B%BE20201113180447.png)
+![](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/QQ%E6%88%AA%E5%9B%BE20201113180447.png)
 
 无缓冲的通道又称为阻塞的通道。我们来看一下下面的代码：
 
@@ -8864,9 +8864,9 @@ select{
 
 ### 14.6.1、聊天室案例
 
-![image-20210726183910100](http://images.zlqit.com/bookshell/golang/assets/image-20210726183910100.png)
+![image-20210726183910100](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210726183910100.png)
 
-![image-20210726183934552](http://images.zlqit.com/bookshell/golang/assets/image-20210726183934552.png)
+![image-20210726183934552](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20210726183934552.png)
 
 服务器：
 
