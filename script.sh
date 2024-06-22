@@ -1,4 +1,3 @@
-set -e
 npm run build
 git add .
 git commit -m "$1"
