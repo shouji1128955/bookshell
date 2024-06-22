@@ -59,7 +59,7 @@ export default {
 
 直接在屏幕上打印
 
-![image-20230314160748797](images/image-20230314160748797.png)
+![image-20230314160748797](http://images.zlqit.com/bookshell/golang/assets/image-20230314160748797.png)
 
 
 
@@ -73,13 +73,13 @@ export default {
 
 
 
-![image-20230310192543077](images/image-20230310192543077.png)
+![image-20230310192543077](http://images.zlqit.com/bookshell/golang/assets/image-20230310192543077.png)
 
 
 
 对比
 
-![image-20230310192613255](images/image-20230310192613255.png)
+![image-20230310192613255](http://images.zlqit.com/bookshell/golang/assets/image-20230310192613255.png)
 
 vue安装
 
@@ -95,7 +95,7 @@ npm config get registry  --> 输出镜像下载的地址，默认是国外的地
 
 
 
-![image-20230310194245072](images/image-20230310194245072.png)
+![image-20230310194245072](http://images.zlqit.com/bookshell/golang/assets/image-20230310194245072.png)
 
 修改地址
 
@@ -107,7 +107,7 @@ npm config set  registry  https://registry.npmmirror.com/
 
 https://element.eleme.cn/#/zh-CN/component/installation
 
-![image-20230310195012515](images/image-20230310195012515.png)
+![image-20230310195012515](http://images.zlqit.com/bookshell/golang/assets/image-20230310195012515.png)
 
 
 
@@ -117,13 +117,13 @@ https://cdnjs.com/
 
 
 
-![image-20230310195538963](images/image-20230310195538963.png)
+![image-20230310195538963](http://images.zlqit.com/bookshell/golang/assets/image-20230310195538963.png)
 
 拷贝到本地直接使用本地的地址
 
 
 
-![image-20230310195648569](images/image-20230310195648569.png)
+![image-20230310195648569](http://images.zlqit.com/bookshell/golang/assets/image-20230310195648569.png)
 
 
 
@@ -135,7 +135,7 @@ npm i element-ui -S
 
 
 
-![image-20230310224756309](images/image-20230310224756309.png)
+![image-20230310224756309](http://images.zlqit.com/bookshell/golang/assets/image-20230310224756309.png)
 
 ## 2、Element
 
@@ -143,7 +143,7 @@ npm i element-ui -S
 
 #### 1、引入Element
 
-![image-20230310200127875](images/image-20230310200127875.png)
+![image-20230310200127875](http://images.zlqit.com/bookshell/golang/assets/image-20230310200127875.png)
 
 添加到main.js文件中
 
@@ -165,7 +165,7 @@ new Vue({
 
 
 
-![image-20230310225650100](images/image-20230310225650100.png)
+![image-20230310225650100](http://images.zlqit.com/bookshell/golang/assets/image-20230310225650100.png)
 
 把下面的代码赋值到 App.vue文件中。
 
@@ -199,9 +199,9 @@ export  default{
 
 
 
-![image-20230310225605056](images/image-20230310225605056.png)
+![image-20230310225605056](http://images.zlqit.com/bookshell/golang/assets/image-20230310225605056.png)
 
-![image-20230310230335913](images/image-20230310230335913.png)
+![image-20230310230335913](http://images.zlqit.com/bookshell/golang/assets/image-20230310230335913.png)
 
 
 
@@ -217,7 +217,7 @@ export  default{
 
 
 
-![image-20230310230402958](images/image-20230310230402958.png)
+![image-20230310230402958](http://images.zlqit.com/bookshell/golang/assets/image-20230310230402958.png)
 
 
 
@@ -229,23 +229,23 @@ npm install babel-plugin-component -D
 
 修改文件
 
-![image-20230310230540503](images/image-20230310230540503.png)
+![image-20230310230540503](http://images.zlqit.com/bookshell/golang/assets/image-20230310230540503.png)
 
 
 
 修改后如下
 
-![image-20230310230653527](images/image-20230310230653527.png)
+![image-20230310230653527](http://images.zlqit.com/bookshell/golang/assets/image-20230310230653527.png)
 
 
 
 接下来按照官方文档进行操作
 
-![image-20230310230927597](images/image-20230310230927597.png)
+![image-20230310230927597](http://images.zlqit.com/bookshell/golang/assets/image-20230310230927597.png)
 
 参考修改后如下
 
-![image-20230310230954368](images/image-20230310230954368.png)
+![image-20230310230954368](http://images.zlqit.com/bookshell/golang/assets/image-20230310230954368.png)
 
 
 
@@ -406,13 +406,13 @@ new Vue({
 
 
 
-![image-20230311193226092](images/image-20230311193226092.png)
+![image-20230311193226092](http://images.zlqit.com/bookshell/golang/assets/image-20230311193226092.png)
 
 
 
 
 
-![image-20230311193244548](images/image-20230311193244548.png)
+![image-20230311193244548](http://images.zlqit.com/bookshell/golang/assets/image-20230311193244548.png)
 
 
 
@@ -432,7 +432,7 @@ https://v3.router.vuejs.org/zh/guide/essentials/nested-routes.html
 
 
 
-![image-20230311201713163](images/image-20230311201713163.png)
+![image-20230311201713163](http://images.zlqit.com/bookshell/golang/assets/image-20230311201713163.png)
 
 
 
@@ -442,7 +442,7 @@ views/main.vue
 
 在由于main文件是页面中需要每次展示的, 所以需要引入```html <router-view> ``` ，在这里，内容我引入了一个循环进度条。 然后在main.vue文件中引入即可
 
-![image-20230311220453476](images/image-20230311220453476.png)
+![image-20230311220453476](http://images.zlqit.com/bookshell/golang/assets/image-20230311220453476.png)
 
 
 
@@ -483,13 +483,13 @@ export default {
 
 因为我使用的是按需引入，需要在main.js文件中引入即可
 
-![image-20230311220601179](images/image-20230311220601179.png)
+![image-20230311220601179](http://images.zlqit.com/bookshell/golang/assets/image-20230311220601179.png)
 
 
 
 创建路由，然后按照下面添加子路由，参考官方文档 https://v3.router.vuejs.org/zh/guide/essentials/nested-routes.html
 
-![image-20230311220709709](images/image-20230311220709709.png)
+![image-20230311220709709](http://images.zlqit.com/bookshell/golang/assets/image-20230311220709709.png)
 
 
 
@@ -503,7 +503,7 @@ export default {
 
 官网选择布局方式--倒数第二个
 
-![image-20230311221751312](images/image-20230311221751312.png)
+![image-20230311221751312](http://images.zlqit.com/bookshell/golang/assets/image-20230311221751312.png)
 
 
 
@@ -579,13 +579,13 @@ export default {
 
 导入的包名称是```html <template> ```中代码中引入el-后面的部分，每次都导入即可。
 
-![image-20230311224902539](images/image-20230311224902539.png)
+![image-20230311224902539](http://images.zlqit.com/bookshell/golang/assets/image-20230311224902539.png)
 
 
 
 浏览访问
 
-![image-20230311230145264](images/image-20230311230145264.png)
+![image-20230311230145264](http://images.zlqit.com/bookshell/golang/assets/image-20230311230145264.png)
 
 
 
@@ -595,7 +595,7 @@ export default {
 
 选择下面这个菜单组件，然后赋值代码
 
-![image-20230311230559510](images/image-20230311230559510.png)
+![image-20230311230559510](http://images.zlqit.com/bookshell/golang/assets/image-20230311230559510.png)
 
 
 
@@ -607,7 +607,7 @@ export default {
 
 
 
-![image-20230312001259855](images/image-20230312001259855.png)
+![image-20230312001259855](http://images.zlqit.com/bookshell/golang/assets/image-20230312001259855.png)
 
 
 
@@ -687,13 +687,13 @@ export default {
 
 
 
-![image-20230312001701338](images/image-20230312001701338.png)
+![image-20230312001701338](http://images.zlqit.com/bookshell/golang/assets/image-20230312001701338.png)
 
 
 
 然后启动服务
 
-![image-20230312001834647](images/image-20230312001834647.png)
+![image-20230312001834647](http://images.zlqit.com/bookshell/golang/assets/image-20230312001834647.png)
 
 #### 3、一级菜单的实现
 
@@ -705,19 +705,19 @@ https://element.eleme.cn/#/zh-CN/component/menu
 
 然后找到collapse ，并且将其设置为false 即可
 
-![image-20230312003435051](images/image-20230312003435051.png)
+![image-20230312003435051](http://images.zlqit.com/bookshell/golang/assets/image-20230312003435051.png)
 
 
 
 参考下面进行修改即可
 
-![image-20230312003630661](images/image-20230312003630661.png)
+![image-20230312003630661](http://images.zlqit.com/bookshell/golang/assets/image-20230312003630661.png)
 
 
 
 然后访问页面就自动打开了
 
-![image-20230312003720300](images/image-20230312003720300.png)
+![image-20230312003720300](http://images.zlqit.com/bookshell/golang/assets/image-20230312003720300.png)
 
 接下来就是调整导航顺序，调整导航1和导航2顺序，删掉导航3，4，并且在导航1中留一个选项1 即可，就是留一个子菜单
 
@@ -780,7 +780,7 @@ export default {
 
 然后访问查看
 
-![image-20230312004450450](images/image-20230312004450450.png)
+![image-20230312004450450](http://images.zlqit.com/bookshell/golang/assets/image-20230312004450450.png)
 
 
 
@@ -838,7 +838,7 @@ export default {
 
 实现一级目录跟二级目录
 
-![image-20230312020825232](images/image-20230312020825232.png)
+![image-20230312020825232](http://images.zlqit.com/bookshell/golang/assets/image-20230312020825232.png)
 
 
 
@@ -959,7 +959,7 @@ export default {
 
 页面访问
 
-![image-20230312020937706](images/image-20230312020937706.png)
+![image-20230312020937706](http://images.zlqit.com/bookshell/golang/assets/image-20230312020937706.png)
 
 
 
@@ -967,25 +967,25 @@ export default {
 
 找到官网的代码部分，然后找到样式部分进行优化
 
-![image-20230312021456592](images/image-20230312021456592.png)
+![image-20230312021456592](http://images.zlqit.com/bookshell/golang/assets/image-20230312021456592.png)
 
 
 
 复制下面三行代码到components/CommonAside.vue，
 
-![image-20230312021525537](images/image-20230312021525537.png)
+![image-20230312021525537](http://images.zlqit.com/bookshell/golang/assets/image-20230312021525537.png)
 
 
 
 参考下面添加即可
 
-![image-20230312021627041](images/image-20230312021627041.png)
+![image-20230312021627041](http://images.zlqit.com/bookshell/golang/assets/image-20230312021627041.png)
 
 
 
 技巧调节高度，通过浏览器
 
-![image-20230312021956069](images/image-20230312021956069.png)
+![image-20230312021956069](http://images.zlqit.com/bookshell/golang/assets/image-20230312021956069.png)
 
 
 
@@ -1002,13 +1002,13 @@ export default {
 
 以上这种方式只对侧边栏的高度进行调整，但是对于h3这种没法识别，所以，可以使用另一种方式less 
 
-![image-20230312110351820](images/image-20230312110351820.png)
+![image-20230312110351820](http://images.zlqit.com/bookshell/golang/assets/image-20230312110351820.png)
 
 
 
 访问查看，但是定义的style不生效
 
-![image-20230312110336574](images/image-20230312110336574.png)
+![image-20230312110336574](http://images.zlqit.com/bookshell/golang/assets/image-20230312110336574.png)
 
 
 
@@ -1023,7 +1023,7 @@ npm  i  less-loader@6.0.0
 
 
 
-![image-20230312114331642](images/image-20230312114331642.png)
+![image-20230312114331642](http://images.zlqit.com/bookshell/golang/assets/image-20230312114331642.png)
 
 
 
@@ -1033,19 +1033,19 @@ npm  i  less-loader@6.0.0
 
 App.vue
 
-![image-20230312115312597](images/image-20230312115312597.png)
+![image-20230312115312597](http://images.zlqit.com/bookshell/golang/assets/image-20230312115312597.png)
 
 字体大写和字体居中对齐
 
 components/CommonAside.vue
 
-![image-20230312115414191](images/image-20230312115414191.png)
+![image-20230312115414191](http://images.zlqit.com/bookshell/golang/assets/image-20230312115414191.png)
 
 
 
 然后访问查看样式
 
-![image-20230312115501433](images/image-20230312115501433.png)
+![image-20230312115501433](http://images.zlqit.com/bookshell/golang/assets/image-20230312115501433.png)
 
 
 
@@ -1057,7 +1057,7 @@ components/CommonAside.vue
 
 Main.vue页面是之前创建好的，可以说是主页面，此处就不需要创建
 
-![image-20230312122857445](images/image-20230312122857445.png)
+![image-20230312122857445](http://images.zlqit.com/bookshell/golang/assets/image-20230312122857445.png)
 
 
 
@@ -1088,7 +1088,7 @@ const routes = [
 
 router/index.js
 
-![image-20230312123119295](images/image-20230312123119295.png)
+![image-20230312123119295](http://images.zlqit.com/bookshell/golang/assets/image-20230312123119295.png)
 
 
 
@@ -1116,19 +1116,19 @@ components/CommonAside.vue
 
 修改第一处：
 
-![image-20230312124340491](images/image-20230312124340491.png)
+![image-20230312124340491](http://images.zlqit.com/bookshell/golang/assets/image-20230312124340491.png)
 
 修改第二处：
 
 
 
-![image-20230312124416615](images/image-20230312124416615.png)
+![image-20230312124416615](http://images.zlqit.com/bookshell/golang/assets/image-20230312124416615.png)
 
 
 
 然后在页面点击按钮，通过控制台打印查看是否拿到结果
 
-![image-20230312124502374](images/image-20230312124502374.png)
+![image-20230312124502374](http://images.zlqit.com/bookshell/golang/assets/image-20230312124502374.png)
 
 
 
@@ -1151,7 +1151,7 @@ components/CommonAside.vue
 
 参考修改
 
-![image-20230312125758587](images/image-20230312125758587.png)
+![image-20230312125758587](http://images.zlqit.com/bookshell/golang/assets/image-20230312125758587.png)
 
 
 
@@ -1300,7 +1300,7 @@ export default {
 
 
 
-![image-20230312130240549](images/image-20230312130240549.png)
+![image-20230312130240549](http://images.zlqit.com/bookshell/golang/assets/image-20230312130240549.png)
 
 
 
@@ -1361,7 +1361,7 @@ components/CommonHeader.vue
 
 第二步： 修改views/Main.vue 中的代码，参考如下
 
-![image-20230312142442554](images/image-20230312142442554.png)
+![image-20230312142442554](http://images.zlqit.com/bookshell/golang/assets/image-20230312142442554.png)
 
 
 
@@ -1418,7 +1418,7 @@ export default {
 
 
 
-![image-20230312142348013](images/image-20230312142348013.png)
+![image-20230312142348013](http://images.zlqit.com/bookshell/golang/assets/image-20230312142348013.png)
 
 
 
@@ -1478,7 +1478,7 @@ export default {
 
 
 
-![image-20230312144052676](images/image-20230312144052676.png)
+![image-20230312144052676](http://images.zlqit.com/bookshell/golang/assets/image-20230312144052676.png)
 
 
 
@@ -1514,7 +1514,7 @@ components\CommonHeader.vue
 
 访问展示查看
 
-![image-20230312144303973](images/image-20230312144303973.png)
+![image-20230312144303973](http://images.zlqit.com/bookshell/golang/assets/image-20230312144303973.png)
 
 
 
@@ -1571,7 +1571,7 @@ components\CommonHeader.vue  修改部分代码
 
 在图标旁边添加一个面包屑，“首页”
 
-![image-20230312150105725](images/image-20230312150105725.png)
+![image-20230312150105725](http://images.zlqit.com/bookshell/golang/assets/image-20230312150105725.png)
 
 
 
@@ -1624,7 +1624,7 @@ https://element.eleme.cn/#/zh-CN/component/dropdown
 
 复制内容即可
 
-![image-20230312150459428](images/image-20230312150459428.png)
+![image-20230312150459428](http://images.zlqit.com/bookshell/golang/assets/image-20230312150459428.png)
 
 
 
@@ -1694,7 +1694,7 @@ components\CommonHeader.vue
 
 查看，然后对内容进行修改即可
 
-![image-20230312150707574](images/image-20230312150707574.png)
+![image-20230312150707574](http://images.zlqit.com/bookshell/golang/assets/image-20230312150707574.png)
 
 
 
@@ -1824,17 +1824,17 @@ export default {
 
 注入到vue
 
-![image-20230312231928367](images/image-20230312231928367.png)
+![image-20230312231928367](http://images.zlqit.com/bookshell/golang/assets/image-20230312231928367.png)
 
 
 
 components\CommonHeader.vue
 
-![image-20230312232015836](images/image-20230312232015836.png)
+![image-20230312232015836](http://images.zlqit.com/bookshell/golang/assets/image-20230312232015836.png)
 
 components\CommonHeader.vue
 
-![image-20230312232100984](images/image-20230312232100984.png)
+![image-20230312232100984](http://images.zlqit.com/bookshell/golang/assets/image-20230312232100984.png)
 
 
 
@@ -1848,7 +1848,7 @@ components\CommonHeader.vue
 
 components\CommonAside.vue
 
-![image-20230312232158415](images/image-20230312232158415.png)
+![image-20230312232158415](http://images.zlqit.com/bookshell/golang/assets/image-20230312232158415.png)
 
 
 
@@ -1856,17 +1856,17 @@ components\CommonAside.vue
 
 components\CommonAside.vue
 
-![image-20230312232241830](images/image-20230312232241830.png)
+![image-20230312232241830](http://images.zlqit.com/bookshell/golang/assets/image-20230312232241830.png)
 
 
 
 然后访问：
 
-![image-20230312232931441](images/image-20230312232931441.png)
+![image-20230312232931441](http://images.zlqit.com/bookshell/golang/assets/image-20230312232931441.png)
 
 上面红框表示存在的问题，需要修改，这种问题首先需要在浏览器f12中定位是那个样式，就是查看class名称是什么，然后根据名称在找到对应的文件，进行修改，这里就修改为auto即可。 看图修改
 
-![image-20230312233938363](images/image-20230312233938363.png)
+![image-20230312233938363](http://images.zlqit.com/bookshell/golang/assets/image-20230312233938363.png)
 
 
 
@@ -1874,7 +1874,7 @@ components\CommonAside.vue
 
 components\CommonAside.vue
 
-![image-20230312234716737](images/image-20230312234716737.png)
+![image-20230312234716737](http://images.zlqit.com/bookshell/golang/assets/image-20230312234716737.png)
 
 
 
@@ -1882,7 +1882,7 @@ components\CommonAside.vue
 
 修改白色间隙
 
-![image-20230312235725751](images/image-20230312235725751.png)
+![image-20230312235725751](http://images.zlqit.com/bookshell/golang/assets/image-20230312235725751.png)
 
 
 
@@ -1921,7 +1921,7 @@ components\CommonAside.vue  样式代码
 
 官网： https://element.eleme.cn/#/zh-CN/component/layout
 
-![image-20230313103819358](images/image-20230313103819358.png)
+![image-20230313103819358](http://images.zlqit.com/bookshell/golang/assets/image-20230313103819358.png)
 
 
 
@@ -1938,7 +1938,7 @@ views\Home.vue
 
 对于左边的卡片，个人信息，需要引入一个样式 Card卡片，鼠标点击的时候显示阴影的效果
 
-![image-20230313104305159](images/image-20230313104305159.png)
+![image-20230313104305159](http://images.zlqit.com/bookshell/golang/assets/image-20230313104305159.png)
 
 引用下面的样式
 
@@ -2050,7 +2050,7 @@ export  default{
 
 https://element.eleme.cn/#/zh-CN/component/table#table-column-scoped-slot
 
-![image-20230313115300647](images/image-20230313115300647.png)
+![image-20230313115300647](http://images.zlqit.com/bookshell/golang/assets/image-20230313115300647.png)
 
 参考代码，然后拷贝到对应的标签中
 
@@ -2196,7 +2196,7 @@ export default {
 
 
 
-![image-20230314004125245](images/image-20230314004125245.png)
+![image-20230314004125245](http://images.zlqit.com/bookshell/golang/assets/image-20230314004125245.png)
 
 
 
@@ -2318,7 +2318,7 @@ css样式部分: D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
 访问样式： 
 
-![image-20230314134406535](images/image-20230314134406535.png)
+![image-20230314134406535](http://images.zlqit.com/bookshell/golang/assets/image-20230314134406535.png)
 
 
 
@@ -2336,7 +2336,7 @@ D:\developer\golang\src\YateOps\my-app>npm install axios
 
 中文文档： http://axios-js.com/zh-cn/docs/index.html
 
-![image-20230314140739884](images/image-20230314140739884.png)
+![image-20230314140739884](http://images.zlqit.com/bookshell/golang/assets/image-20230314140739884.png)
 
 
 
@@ -2394,7 +2394,7 @@ D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
 
 
-![image-20230314172932044](images/image-20230314172932044.png)
+![image-20230314172932044](http://images.zlqit.com/bookshell/golang/assets/image-20230314172932044.png)
 
 
 
@@ -2402,7 +2402,7 @@ D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
 
 
-<img src="image/image-20230314172705979.png" alt="image-20230314172705979"  />
+<img src="http://images.zlqit.com/bookshell/golang/assets/image-20230314172705979.png" alt="image-20230314172705979"  />
 
 
 
@@ -2455,7 +2455,7 @@ import "./api/mock"
 
 访问刷新显示
 
-![image-20230314234636588](images/image-20230314234636588.png)
+![image-20230314234636588](http://images.zlqit.com/bookshell/golang/assets/image-20230314234636588.png)
 
 
 
@@ -2625,7 +2625,7 @@ mock.mock('/api/home/getData', mockApi.getStatisticalData) //调用对象中的�
 
 然后在浏览器访问，查看是否获取到数据，明显已经拿到了数据
 
-![image-20230315001654240](images/image-20230315001654240.png)
+![image-20230315001654240](http://images.zlqit.com/bookshell/golang/assets/image-20230315001654240.png)
 
 
 
@@ -2637,7 +2637,7 @@ orderData 表示折线图的数据
 
 D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
-![image-20230315004135920](images/image-20230315004135920.png)
+![image-20230315004135920](http://images.zlqit.com/bookshell/golang/assets/image-20230315004135920.png)
 
 
 
@@ -2645,7 +2645,7 @@ D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
 增加下面有间隙，需要修改代码如下
 
-![image-20230315005339515](images/image-20230315005339515.png)
+![image-20230315005339515](http://images.zlqit.com/bookshell/golang/assets/image-20230315005339515.png)
 
 
 
@@ -2653,13 +2653,13 @@ D:\developer\golang\src\YateOps\my-app\src\views\Home.vue
 
 
 
-![image-20230315005411472](images/image-20230315005411472.png)
+![image-20230315005411472](http://images.zlqit.com/bookshell/golang/assets/image-20230315005411472.png)
 
 
 
 
 
-![image-20230315005520192](images/image-20230315005520192.png)
+![image-20230315005520192](http://images.zlqit.com/bookshell/golang/assets/image-20230315005520192.png)
 
 
 
@@ -2724,7 +2724,7 @@ npm install mockjs -S
 
 创建文档home.js,先创建文件夹 api\mockData
 
-![image-20231115001143381](images/image-20231115001143381.png)
+![image-20231115001143381](http://images.zlqit.com/bookshell/golang/assets/image-20231115001143381.png)
 
 
 
@@ -2734,7 +2734,7 @@ npm install mockjs -S
 
 操作方式
 
-![image-20231115004000457](images/image-20231115004000457.png)
+![image-20231115004000457](http://images.zlqit.com/bookshell/golang/assets/image-20231115004000457.png)
 
 
 
@@ -2748,13 +2748,13 @@ npm install mockjs -S
 
 
 
-![image-20231115004048753](images/image-20231115004048753.png)
+![image-20231115004048753](http://images.zlqit.com/bookshell/golang/assets/image-20231115004048753.png)
 
 
 
 
 
-![image-20231115004135640](images/image-20231115004135640.png)
+![image-20231115004135640](http://images.zlqit.com/bookshell/golang/assets/image-20231115004135640.png)
 
 
 

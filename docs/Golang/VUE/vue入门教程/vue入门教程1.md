@@ -38,7 +38,7 @@ nvm use 16.14.0 可以切换多个nvm版本
 
 
 
-![image-20231031223432263](images/image-20231031223432263.png)
+![image-20231031223432263](http://images.zlqit.com/bookshell/golang/assets/image-20231031223432263.png)
 
 
 
@@ -359,7 +359,7 @@ v-model： 用于实现对template中的元素跟data中的数据进行绑定，
 
 ### v-bind属性
 
-![image-20231101114607453](images/image-20231101114607453.png)
+![image-20231101114607453](http://images.zlqit.com/bookshell/golang/assets/image-20231101114607453.png)
 
 代码参考
 
@@ -407,7 +407,7 @@ v-model： 用于实现对template中的元素跟data中的数据进行绑定，
 
 就像下面这个列表就可以拆分为一个组件出来
 
-![image-20231101120943109](images/image-20231101120943109.png)
+![image-20231101120943109](http://images.zlqit.com/bookshell/golang/assets/image-20231101120943109.png)
 
 
 
@@ -593,7 +593,7 @@ vm 的使用：
 
 
 
-![image-20231101130854854](images/image-20231101130854854.png)
+![image-20231101130854854](http://images.zlqit.com/bookshell/golang/assets/image-20231101130854854.png)
 
 
 
@@ -621,7 +621,7 @@ vm代表的就是vue应用的根组件
 
 
 
-![](images/image-24.png)
+![](http://images.zlqit.com/bookshell/golang/assets/image-24.png)
 
 ```html
 <!DOCTYPE html>
@@ -693,7 +693,7 @@ vm代表的就是vue应用的根组件
 
 
 注意
-![image-20231101132719012](images/image-20231101132719012.png)
+![image-20231101132719012](http://images.zlqit.com/bookshell/golang/assets/image-20231101132719012.png)
 
 
 
@@ -1140,7 +1140,7 @@ const vm = App.mount('#root')
 
 可以使用一个 :key="item"
 
-![image-20231101205436378](images/image-20231101205436378.png)
+![image-20231101205436378](http://images.zlqit.com/bookshell/golang/assets/image-20231101205436378.png)
 
 
 
@@ -1218,7 +1218,7 @@ v-for跟v-if在同一个dev中无法同时兼容，所以可以在v-for的dev下
 
 
 
-![image-20231101212708632](images/image-20231101212708632.png)
+![image-20231101212708632](http://images.zlqit.com/bookshell/golang/assets/image-20231101212708632.png)
 
 部分代码参考
 
@@ -1317,7 +1317,7 @@ v-for跟v-if在同一个dev中无法同时兼容，所以可以在v-for的dev下
 
 
 
-![image-20231101215528551](images/image-20231101215528551.png)
+![image-20231101215528551](http://images.zlqit.com/bookshell/golang/assets/image-20231101215528551.png)
 
 
 
@@ -1422,7 +1422,7 @@ click传递多个方法
 
 
 
-![](./images/image-20231101215528552.gif)
+![](http://images.zlqit.com/bookshell/golang/assets/image-20231101215528552.gif)
 
 常见的修饰符还有以下： 
 
@@ -1508,7 +1508,7 @@ template:  `<div>
 
 有两种，第一种就是true或者false ,第二种就是通过数组的方式
 
-![image-20231101223702621](images/image-20231101223702621.png)
+![image-20231101223702621](http://images.zlqit.com/bookshell/golang/assets/image-20231101223702621.png)
 
 ```htmml
      data() {
@@ -1538,7 +1538,7 @@ template:  `<div>
 
 定义为一个数组
 
-![image-20231101223802007](images/image-20231101223802007.png)
+![image-20231101223802007](http://images.zlqit.com/bookshell/golang/assets/image-20231101223802007.png)
 
 ```html
     data() {
@@ -1574,7 +1574,7 @@ radio中使用
 
 由于radio只能单选，不像checkbox， 所以radio定义为一个字符串即可
 
-![image-20231101224422904](images/image-20231101224422904.png)
+![image-20231101224422904](http://images.zlqit.com/bookshell/golang/assets/image-20231101224422904.png)
 
 
 
@@ -1606,7 +1606,7 @@ const App = Vue.createApp({
 
 select选择用法
 
-![image-20231101225724208](images/image-20231101225724208.png)
+![image-20231101225724208](http://images.zlqit.com/bookshell/golang/assets/image-20231101225724208.png)
 
 
 
@@ -1639,7 +1639,7 @@ select多选择
 
 
 
-![image-20231101230334886](images/image-20231101230334886.png)
+![image-20231101230334886](http://images.zlqit.com/bookshell/golang/assets/image-20231101230334886.png)
 
 
 
@@ -1680,7 +1680,7 @@ select多选择
 
 第二种定义的方式
 
-![image-20231101231558806](images/image-20231101231558806.png)
+![image-20231101231558806](http://images.zlqit.com/bookshell/golang/assets/image-20231101231558806.png)
 
 
 
@@ -1765,7 +1765,7 @@ select多选择
 
 效果如下
 
-![](./images/image-20231101231558807.gif)
+![](http://images.zlqit.com/bookshell/golang/assets/image-20231101231558807.gif)
 
 ```html
     template:  `<div>
@@ -1785,7 +1785,7 @@ select多选择
 
 
 
-![image-20231101234111112](images/image-20231101234111112.png)
+![image-20231101234111112](http://images.zlqit.com/bookshell/golang/assets/image-20231101234111112.png)
 
 使用的方法就是 v-model.number
 
@@ -1816,7 +1816,7 @@ select多选择
 
 功能，去除输入字符前后的空格，但是中间的不会
 
-![image-20231101234616357](images/image-20231101234616357.png)
+![image-20231101234616357](http://images.zlqit.com/bookshell/golang/assets/image-20231101234616357.png)
 
 
 
@@ -1860,7 +1860,7 @@ select多选择
 
 
 
-![image-20231102101137076](images/image-20231102101137076.png)
+![image-20231102101137076](http://images.zlqit.com/bookshell/golang/assets/image-20231102101137076.png)
 
 
 
@@ -1910,7 +1910,7 @@ select多选择
 
 
 
-![](./images/image-20231102101137077.gif)
+![](http://images.zlqit.com/bookshell/golang/assets/image-20231102101137077.gif)
 
 
 
@@ -1982,7 +1982,7 @@ new Vue({
 
 方式3
 
-![image-20231109092104696](images/image-20231109092104696.png)
+![image-20231109092104696](http://images.zlqit.com/bookshell/golang/assets/image-20231109092104696.png)
 
 
 
@@ -2161,7 +2161,7 @@ const App = Vue.createApp({
 
 如果传递的值跟校验的值不相等，提示警告
 
-![image-20231102112500526](images/image-20231102112500526.png)
+![image-20231102112500526](http://images.zlqit.com/bookshell/golang/assets/image-20231102112500526.png)
 
 支持的类型
 
@@ -2263,7 +2263,7 @@ default: () => {
 
 
 
-![image-20231104114532693](images/image-20231104114532693.png)
+![image-20231104114532693](http://images.zlqit.com/bookshell/golang/assets/image-20231104114532693.png)
 
 
 
@@ -2355,7 +2355,7 @@ default: () => {
 
 
 
-![image-20231104122151150](images/image-20231104122151150.png)
+![image-20231104122151150](http://images.zlqit.com/bookshell/golang/assets/image-20231104122151150.png)
 
 
 
@@ -2365,7 +2365,7 @@ default: () => {
 
 
 
-![image-20231104122121423](images/image-20231104122121423.png)
+![image-20231104122121423](http://images.zlqit.com/bookshell/golang/assets/image-20231104122121423.png)
 
 
 
@@ -2405,7 +2405,7 @@ default: () => {
 
 
 
-![image-20231104122449164](images/image-20231104122449164.png)
+![image-20231104122449164](http://images.zlqit.com/bookshell/golang/assets/image-20231104122449164.png)
 
 
 
@@ -2478,7 +2478,7 @@ default: () => {
 
 
 
-![](./images/image-20231104122449165.gif)
+![](http://images.zlqit.com/bookshell/golang/assets/image-20231104122449165.gif)
 
 
 
@@ -2553,7 +2553,7 @@ template:  `<div ref='count' v-once @click="count += 1">
 
 
 
-![image-20231104234334053](images/image-20231104234334053.png)
+![image-20231104234334053](http://images.zlqit.com/bookshell/golang/assets/image-20231104234334053.png)
 
 
 
@@ -2791,7 +2791,7 @@ ChatGPT
 
 异步加载，只有当访问这个页面的时候在加载，如果访问首页，下面的login这种页面其实已经加载到浏览器本地了，所以加载了很多没有使用的页面，所以可以降低这种代码量，提上访问效率，可以使用异步加载的方式，提升访问速度。
 
-![image-20231105162938621](images/image-20231105162938621.png)
+![image-20231105162938621](http://images.zlqit.com/bookshell/golang/assets/image-20231105162938621.png)
 
 
 
@@ -2823,21 +2823,21 @@ Vuex 将这些数据存储在一个全局的状态树（state tree）中，这�
 
 
 
-![image-20231105213515892](images/image-20231105213515892.png)
+![image-20231105213515892](http://images.zlqit.com/bookshell/golang/assets/image-20231105213515892.png)
 
 
 
 选择vue版本
 
-![image-20231105220757157](./images/image-20231105220757157.png)
+![image-20231105220757157](http://images.zlqit.com/bookshell/golang/assets/image-20231105220757157.png)
 
 
 
-![image-20231105225418329](images/image-20231105225418329.png)
+![image-20231105225418329](http://images.zlqit.com/bookshell/golang/assets/image-20231105225418329.png)
 
 
 
-![image-20231105225510355](images/image-20231105225510355.png)
+![image-20231105225510355](http://images.zlqit.com/bookshell/golang/assets/image-20231105225510355.png)
 
 
 
@@ -2934,7 +2934,7 @@ export default {
 
 项目引用
 
-![image-20231105165648329](images/image-20231105165648329.png)
+![image-20231105165648329](http://images.zlqit.com/bookshell/golang/assets/image-20231105165648329.png)
 
 
 

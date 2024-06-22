@@ -18,7 +18,7 @@
 
 随着文件中存储的内容越来越多，在文件中修改和查找某些数据已经变得非常困难了，所以人们发明了一种专门的软件来管理存储的数据，这些数据依照一定格式保存，通过这个软件可以方便的对数据进行增删改查操作，从而极大的提升了数据管理效率，人们就把这个管理数据的软件叫做数据库管理系统（英文：`Database Management System`，简称：`DBMS`）。
 
-![image-20210922115640480](assets/image-20210922115640480-16322830018691.png)
+![image-20210922115640480](http://images.zlqit.com/bookshell/golang/assets/image-20210922115640480-16322830018691.png)
 
 # 一、sql介绍
 
@@ -120,7 +120,7 @@ SELECT * FROM tb_table
 
 数据表是数据库的重要组成部分，每一个数据库都是由若干个数据表组成的。比如，在电脑中一个文件夹有若干excel文件。这里的文件夹就相当于数据库，excel文件就相当于数据表。
 
-![image-20230702121521881](./assets/image-20230702121521881-8271322.png)
+![image-20230702121521881](http://images.zlqit.com/bookshell/golang/assets/image-20230702121521881-8271322.png)
 
 ## 3.1、创建数据表
 
@@ -637,7 +637,7 @@ select name from author where id in (1,2);
 mysql> select * from book,publisher;
 ````
 
-![image-20210810152409411](assets/image-20210810152409411.png)
+![image-20210810152409411](http://images.zlqit.com/bookshell/golang/assets/image-20210810152409411.png)
 
 #### 6.2.2、内连接(inner join)
 
@@ -653,7 +653,7 @@ OR
 SELECT * FROM book INNER JOIN publisher ON book.pub_id=publisher.id;
 ```
 
-![image-20210810151907238](assets/image-20210810151907238.png)
+![image-20210810151907238](http://images.zlqit.com/bookshell/golang/assets/image-20210810151907238.png)
 
 案例2：
 
@@ -661,14 +661,14 @@ SELECT * FROM book INNER JOIN publisher ON book.pub_id=publisher.id;
 SELECT * FROM book INNER JOIN book2author ON book.id=book2author.book_id;
 ```
 
-![image-20210810152714427](assets/image-20210810152714427.png)
+![image-20210810152714427](http://images.zlqit.com/bookshell/golang/assets/image-20210810152714427.png)
 
 ```sql  
 SELECT * FROM book INNER JOIN book2author ON book.id=book2author.book_id 
                    INNER JOIN author on book2author.author_id=author.id
 ```
 
-![image-20210810152835332](assets/image-20210810152835332.png)
+![image-20210810152835332](http://images.zlqit.com/bookshell/golang/assets/image-20210810152835332.png)
 
 #### 6.2.3、左连接(left join)
 
@@ -680,7 +680,7 @@ SELECT * FROM book INNER JOIN book2author ON book.id=book2author.book_id
 
 上述语法中，“表1”为基表，“表2”为参考表。左连接查询时，可以查询出“表1”中的所有记录和“表2”中匹配连接条件的记录。如果“表1”的某行在“表2”中没有匹配行，那么在返回结果中，“表2”的字段值均为空值（NULL）。
 
-![image-20210810153258219](assets/image-20210810153258219.png)
+![image-20210810153258219](http://images.zlqit.com/bookshell/golang/assets/image-20210810153258219.png)
 
 #### 6.2.4、右连接(right join)
 
@@ -692,7 +692,7 @@ SELECT * FROM book INNER JOIN book2author ON book.id=book2author.book_id
  SELECT * FROM book RIGHT JOIN publisher ON book.pub_id=publisher.id;
 ```
 
-![image-20210810153745139](assets/image-20210810153745139.png)
+![image-20210810153745139](http://images.zlqit.com/bookshell/golang/assets/image-20210810153745139.png)
 
 # 七、约束
 
