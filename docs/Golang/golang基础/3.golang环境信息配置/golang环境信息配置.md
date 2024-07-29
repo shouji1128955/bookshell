@@ -37,8 +37,6 @@ true
 - 在 Windows/Linux 上，可以使用 `Shift + Enter` 快速在下方插入新行
 - 在 macOS 上，可以使用 `Cmd + Enter`。
 
-
-
 ```shell
 CTRL+X 删除当前光标所在行
 CTRL+D 复制当前光标所在行
@@ -46,15 +44,9 @@ ALT+Q 可以看到当前方法的声明
 CTRL+Backspace 按单词进行删除
 ```
 
-
-
-
-
 goland快捷键
 
 [GoLand 快捷键 - MikuDance - 博客园 (cnblogs.com)](https://www.cnblogs.com/just-save/p/12389901.html)
-
-
 
 
 
@@ -157,3 +149,26 @@ $ go run goproxy.go
 然后通过把 `GOPROXY` 设置为 `http://localhost:8080` 来试用它。另外，我们也建议你把 `GO111MODULE` 设置为 `on`。
 
 就这么简单，一个功能完备的 Go 模块代理就搭建成功了。事实上，你还可以将 [Goproxy](https://github.com/goproxy/goproxy) 结合着你钟爱的 Web 框架一起使用，比如 [Gin](https://pkg.go.dev/github.com/gin-gonic/gin#WrapH) 和 [Echo](https://pkg.go.dev/github.com/labstack/echo/v4#WrapHandler)，你所需要做的只是多添加一条路由而已。更高级的用法请查看[文档](https://pkg.go.dev/github.com/goproxy/goproxy)。
+
+
+
+### golang跨平台编译打包程序
+
+编译运行在 amd64位 linux系统
+
+```go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+```
+
+编译运行在 mac m芯片系统
+
+```go
+CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build
+```
+
+编译运行在 amd64位 windows系统
+
+```go
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build
+```
+
