@@ -49,6 +49,14 @@ subsets:
         protocol: TCP
 ```
 
+确认服务是否存在 
+
+```shell
+root@bj-master01-61:/apps/prometheus# kubectl get ep  -l k8s-app=etcd -n   kube-system --show-labels
+NAME       ENDPOINTS          AGE   LABELS
+etcd-k8s   10.51.10.61:2379   47h   k8s-app=etcd
+```
+
 
 
 #### 3、创建ServiceMonitor
