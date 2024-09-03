@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/kubernetes/affinity">
+            to="/docs/Kubernetes/k8s%20studay">
             Docusaurus Tutorial - 5min ⏱️
           </Link>
         </div>
