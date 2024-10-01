@@ -68,7 +68,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://shouji1128955.github.io/bookshell/',
+            'https://github.com/shouji1128955/bookshell/edit/main',
 		      showLastUpdateAuthor: true, 
           showLastUpdateTime: true,
         },   
@@ -77,7 +77,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://shouji1128955.github.io/bookshell/',
+            'https://github.com/shouji1128955/bookshell/tree/main/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
