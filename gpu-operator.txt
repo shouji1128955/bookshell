@@ -1,3 +1,0 @@
-nvidia-dcgm-exporter-v5p57
-nvidia-device-plugin-daemonset-rmsbb
-nvidia-operator-validator-vxkwc
