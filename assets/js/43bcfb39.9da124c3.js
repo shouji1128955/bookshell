@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbookshell=self.webpackChunkbookshell||[]).push([[2745],{2548:e=>{e.exports=JSON.parse('{"permalink":"/bookshell/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

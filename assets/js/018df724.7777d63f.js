@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbookshell=self.webpackChunkbookshell||[]).push([[4425],{904:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/bookshell/blog/tags/docusaurus","allTagsPath":"/bookshell/blog/tags","count":2}')}}]);
