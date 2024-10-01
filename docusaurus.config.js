@@ -24,7 +24,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'shouji1128955', // Usually your GitHub org/user name.
   projectName: 'bookshell', // Usually your repo name.
   trailingSlash: false,
   onBrokenLinks: 'throw',
@@ -143,23 +143,34 @@ const config = {
               },  
 			  
             ]
-        }, 
+        },
 
 
-        {
-          label: 'Kubernetes',
-          position: 'left',
-          items: [
+      //   {
+      //     label: 'Kubernetes',
+      //     position: 'left',
+      //     items: [
+      //         {
+      //             type: 'docSidebar',
+      //             sidebarId: 'Kubernetes',   //这个名称最好是英文
+      //             to: '/docs/Kubernetes',
+      //             label: 'Kubernetes',
+      //         },
+      //     ]
+      // },
+
               {
-                  type: 'docSidebar',
-                  sidebarId: 'Kubernetes',   //这个名称最好是英文
-                  to: '/docs/Kubernetes',
-                  label: 'Kubernetes',
-              },                               
-          ]
-      },  
-
-
+                label: 'Kubernetes',
+                position: 'left',
+                items: [
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'k8s',   //这个名称最好是英文
+                        to: '/docs/k8s',
+                        label: 'Kubernetes',
+                    },
+                ]
+            },
       {
         label: 'Prometheus',
         position: 'left',
@@ -309,7 +320,7 @@ const config = {
             items: [
               {
                 label: 'LiteShell',
-                href: 'https://book.zlqit.com'
+                href: 'https://shouji1128955.github.io'
               },
             ],
           },
