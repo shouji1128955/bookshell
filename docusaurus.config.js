@@ -68,7 +68,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://shouji1128955.github.io/bookshell/',
 		      showLastUpdateAuthor: true, 
           showLastUpdateTime: true,
         },   
@@ -77,7 +77,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://shouji1128955.github.io/bookshell/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
