@@ -1,44 +1,43 @@
-name: Deploy GitHub Pages
+name: Deploy to GitHub Pages
 
-# 触发条件：在 push 到 master 分支后
 on:
   push:
     branches:
       - main
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
-# 任务
+permissions:
+  contents: write
+
 jobs:
-  build-and-deploy:
-    # 服务器环境：最新版 Ubuntu
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-
-      # 1、拉取代码
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          persist-credentials: false        
-      
-      # 2、生成静态文件
-      #- name: Build
-      #  run: |
-      #    npm install
-      #    npm run build
-                    
-      # 执行 ls -l 命令
-      #- name: List files
-      #  run:   cp -r  git.bak  .git  && ls -l  && pwd
+          node-version: 18
+          cache: yarn
 
-      # 3、部署到 somenzz.cn 服务器
-      - name: rsync deployments
-        uses: burnett01/rsync-deployments@4.1
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build website
+        run: yarn build
+
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
-          switches: -avzh  --delete
-          path: ./build/
-          remote_path: /apps/liteshell/
-          remote_host: www.zlqit.com
-          remote_port: 51888
-          remote_user: root
-          remote_key: ${{ secrets.MY_UBUNTU_RSA_PRIVATE_KEY }}
-     
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Build output to publish to the `gh-pages` branch:
+          publish_dir: ./build
+          # The following lines assign commit authorship to the official
+          # GH-Actions bot for deploys to `gh-pages` branch:
+          # https://github.com/actions/checkout/issues/13#issuecomment-724415212
+          # The GH actions bot is used by default if you didn't specify the two fields.
+          # You can swap them out with your own user credentials.
+          user_name: github-actions[bot]
+          user_email: 409003604@qq.com
