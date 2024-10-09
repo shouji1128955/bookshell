@@ -1,0 +1,27 @@
+{
+  "id": "Sre/面试题/python",
+  "title": "python",
+  "description": "Python的数据类型有哪些",
+  "source": "@site/docs/Sre/3-面试题/6.python.md",
+  "sourceDirName": "Sre/3-面试题",
+  "slug": "/Sre/面试题/python",
+  "permalink": "/bookshell/en/docs/Sre/面试题/python",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/shouji1128955/bookshell/edit/main/docs/Sre/3-面试题/6.python.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "AMiner",
+  "lastUpdatedAt": 1719066785000,
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "SreMianshi",
+  "previous": {
+    "title": "缓存服务",
+    "permalink": "/bookshell/en/docs/Sre/面试题/缓存服务"
+  },
+  "next": {
+    "title": "容器技术",
+    "permalink": "/bookshell/en/docs/Sre/面试题/容器技术"
+  }
+}

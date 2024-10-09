@@ -1,0 +1,27 @@
+{
+  "id": "Sre/日常运维/git操作",
+  "title": "Git使用手册",
+  "description": "安装",
+  "source": "@site/docs/Sre/1-日常运维/3.git操作.md",
+  "sourceDirName": "Sre/1-日常运维",
+  "slug": "/Sre/日常运维/git操作",
+  "permalink": "/bookshell/en/docs/Sre/日常运维/git操作",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/shouji1128955/bookshell/edit/main/docs/Sre/1-日常运维/3.git操作.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "zhanglaiqiang",
+  "lastUpdatedAt": 1720099148000,
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "SreOper",
+  "previous": {
+    "title": "镜像列表",
+    "permalink": "/bookshell/en/docs/Sre/日常运维/镜像列表"
+  },
+  "next": {
+    "title": "npm常用命令",
+    "permalink": "/bookshell/en/docs/Sre/日常运维/npm操作"
+  }
+}

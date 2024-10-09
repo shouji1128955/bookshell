@@ -1,0 +1,27 @@
+{
+  "id": "Sre/面试题/缓存服务",
+  "title": "缓存服务",
+  "description": "使用rabbitmq的场景",
+  "source": "@site/docs/Sre/3-面试题/5.缓存服务.md",
+  "sourceDirName": "Sre/3-面试题",
+  "slug": "/Sre/面试题/缓存服务",
+  "permalink": "/bookshell/en/docs/Sre/面试题/缓存服务",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/shouji1128955/bookshell/edit/main/docs/Sre/3-面试题/5.缓存服务.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "AMiner",
+  "lastUpdatedAt": 1719072900000,
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "SreMianshi",
+  "previous": {
+    "title": "prometheus部署文档输出",
+    "permalink": "/bookshell/en/docs/Sre/面试题/prometheus部署文档输出"
+  },
+  "next": {
+    "title": "python",
+    "permalink": "/bookshell/en/docs/Sre/面试题/python"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Sre/中间件/Elasticsearch",
+  "title": "Elasticsearch",
+  "description": "1、集群部署",
+  "source": "@site/docs/Sre/2-中间件/2.Elasticsearch.md",
+  "sourceDirName": "Sre/2-中间件",
+  "slug": "/Sre/中间件/Elasticsearch",
+  "permalink": "/bookshell/en/docs/Sre/中间件/Elasticsearch",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/shouji1128955/bookshell/edit/main/docs/Sre/2-中间件/2.Elasticsearch.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "AMiner",
+  "lastUpdatedAt": 1719072900000,
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "SreMiddleSoft",
+  "previous": {
+    "title": "Harbor",
+    "permalink": "/bookshell/en/docs/Sre/中间件/Harbor"
+  },
+  "next": {
+    "title": "Redis",
+    "permalink": "/bookshell/en/docs/Sre/中间件/Redis"
+  }
+}

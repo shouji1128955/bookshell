@@ -1,0 +1,18 @@
+{
+  "id": "DevOps/observability/OpenTelemetry/OpenTelemetry",
+  "title": "OpenTelemetry",
+  "description": "参考文档：",
+  "source": "@site/docs/DevOps/5-observability/OpenTelemetry/OpenTelemetry.md",
+  "sourceDirName": "DevOps/5-observability/OpenTelemetry",
+  "slug": "/DevOps/observability/OpenTelemetry/",
+  "permalink": "/bookshell/en/docs/DevOps/observability/OpenTelemetry/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/shouji1128955/bookshell/edit/main/docs/DevOps/5-observability/OpenTelemetry/OpenTelemetry.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "AMiner",
+  "lastUpdatedAt": 1719066785000,
+  "frontMatter": {},
+  "sidebar": "DevOpsobservability"
+}
