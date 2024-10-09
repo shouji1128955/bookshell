@@ -92,7 +92,7 @@ js字符串反转的几种方式
 
 
 
-```
+```shell
 let str = "hello world";
 let newStr = str.split("").reverse().join("");
 console.log(newStr);
@@ -118,7 +118,7 @@ console.log(newStr);
 
 
 
-```txt
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -848,7 +848,7 @@ v-bind -> 简写为:
 
 data:
 
-我们前面学习了基础的一些属性，那么了解了data的一些基本用法，在vue中是通过数据编程的一种思想,所以除了return 返回数据外，我们也可以修改data的属性
+我们前面学习了基础的一些属性，那么了解了data的一些基本用法，在vue中是通过数据编程的一种思想,所以除了`return` 返回数据外，我们也可以修改data的属性
 
 
 
@@ -864,7 +864,7 @@ data:
 
 methods:
 
-也可以在{{}}内部使用方法
+也可以在`{{}}`内部使用方法
 
 ```html
    template: `
@@ -901,10 +901,11 @@ methods:
   </div>`
 ```
 
+
+```shell
 当发生下列操作时，页面的{{formatString(message)}} 会发生改变，但是total获取到的时间戳没有发生改变这个是为什么呢?
-
 vm.$data.message="change string 2"
-
+```
 
 
 2. 定义方法,然后通过方法的方式进行同样的操作  
@@ -2024,11 +2025,10 @@ import LoginVue from './components/Login.vue';
 注册局部组件 const App = Vue.createApp
 
 引用局部组件： 
-
+```html
 const App = Vue.createApp({
     components: {  helloworld2:  helloWorld },
 
-```html
 <script>
 
     const  helloWorld = {
@@ -2132,7 +2132,7 @@ const App = Vue.createApp({
 
 
 
-值传递过程中的值类型校验, props: {content: String},  表示检验传递过来的值是字符串，如果是整数，则提示类型对不上
+值传递过程中的值类型校验, props: `{content: String}`,  表示检验传递过来的值是字符串，如果是整数，则提示类型对不上
 
 ```html
 <script>
@@ -2165,7 +2165,7 @@ const App = Vue.createApp({
 
 支持的类型
 
-string , Boolean , Array , Object, Function, Symbol
+string , Boolean , Array , `Object`, Function, Symbol
 
 
 

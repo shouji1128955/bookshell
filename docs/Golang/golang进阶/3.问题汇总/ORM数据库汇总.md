@@ -17,14 +17,14 @@ Teacher -->  Teacher理解，首先Teacher会自动添加ID,然后去关联表Te
 
 ![](./images/img003.png)
 
-
+```shell
 t1 := Teacher{ID=1,name="zhang",...}
 
 c1 = Class{Name:"软件一班", TeacherID=1}
 
 c1.Teacher (gorm: TeacherID=1 --> sql --> Teacher{ID=1,name="zhang",...})
 
-
+```
 
 总结: 
 

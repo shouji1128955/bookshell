@@ -442,7 +442,7 @@ sensitive  = true  //限制变量在UI中显示
 
 
 参数类型
-
+```shell
 - any
 - string
 - number
@@ -452,7 +452,7 @@ sensitive  = true  //限制变量在UI中显示
 - map(```<type>```)
 - object({ATTR_NAME=ATTR_TYPE,...})
 - tuple([```<TYPE>```,...])
-
+```
 
 
 #### map变量

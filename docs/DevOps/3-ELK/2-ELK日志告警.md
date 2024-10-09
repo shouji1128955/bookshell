@@ -491,8 +491,9 @@ output {
  "^\|%{TIMESTAMP_ISO8601:logdate}\|%{LOGLEVEL:log_level}\s?\|%{USERNAME:app_name}\|%{URIPATH:request_uri}\|%{URIPROTO:http_method}\|%{BASE16NUM:request_id}\|%{DATA:request_app_name}\|%{GREEDYDATA:ms_describe}"
 ```
 
+```shell
 这部分内容是匹配日志格式, 其中%{DATA:request_app_name}用来可以匹配空格字符，%{GREEDYDATA:ms_describe}用来配置剩余所有的日志内容。
-
+```
 
 
 测试日志格式

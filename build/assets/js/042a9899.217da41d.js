@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbookshell=self.webpackChunkbookshell||[]).push([[7897],{1142:s=>{s.exports=JSON.parse('{"name":"@easyops-cn/docusaurus-search-local","id":"default"}')}}]);

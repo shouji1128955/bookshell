@@ -253,9 +253,12 @@ mvvm模式
 
 push数据
 
+```shell
  <v-model中的inputValue跟data中的inputValue做了绑定
-
 ```
+
+
+```shell
 <!DOCTYPE html>
 <html lang="en">
 
@@ -321,7 +324,7 @@ push数据
 
 - 在标签上的某个属性和数据进行绑定使用 v-bind 
 
-- 在标签内部想使用数据直接使用{{数据值}}
+- 在标签内部想使用数据直接使用`{{数据值}}`
 
 
 
@@ -1318,14 +1321,3 @@ Non-props属性
 
 
 ![image-20230514165347730](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/image-20230514165347730.png)
-
-
-
-
-
-
-
-
-
-
-

@@ -5,9 +5,10 @@
 //  light: require('prism-react-renderer/themes/github'),
 //  dark: require('prism-react-renderer/themes/vsDark'),
 //};
+import {themes as prismThemes} from 'prism-react-renderer';
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+//const lightCodeTheme = require('prism-react-renderer/themes/github');
+//const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -34,7 +35,7 @@ const config = {
   themes: [
     // ... Your other themes.
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+        require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
@@ -356,19 +357,9 @@ const config = {
       },
 
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: [
-          'dart',
-          'ruby',
-          'groovy',
-          'kotlin',
-          'java',
-          'swift',
-          'objectivec',
-		  'go',
-          
-        ],
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+        },
         magicComments: [
           {
             className: 'theme-code-block-highlighted-line',
@@ -383,7 +374,6 @@ const config = {
 
         //设置默认语言
         defaultLanguage: 'shell',
-      },
     }),
 };
 

@@ -10,11 +10,11 @@
 -- 即一边学课程，一边写项目，课程结束，golang开发便是小菜一碟
 ````
 
-> **预备知识点**
->
-> 1. **Golang基础（数据类型，流程控制语句，函数，结构体等）**
-> 2. **Mysql的基本sql语句**
-> 3. **HTML + CSS**
+**预备知识点**
+
+1. **Golang基础（数据类型，流程控制语句，函数，结构体等）**
+2. **Mysql的基本sql语句**
+3. **HTML + CSS**
 
 
 
@@ -103,18 +103,20 @@ HTTP长连接，指的是复用TCP连接。多个HTTP请求可以复用同一个
 
 http协议包含由浏览器发送数据到服务器需要遵循的请求协议与服务器发送数据到浏览器需要遵循的请求协议。用于HTTP协议交互的信被为HTTP报文。请求端(客户端)的HTTP报文 做请求报文,响应端(服务器端)的 做响应报文。HTTP报文本身是由多行数据构成的字文本。
 
-​				![http协议](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/http%E5%8D%8F%E8%AE%AE.png)
+![http协议](https://iteshell.oss-cn-beijing.aliyuncs.com/bookshell/golang/assets/http%E5%8D%8F%E8%AE%AE.png)
 
-> 1. 一个完整的URL包括：协议、ip、端口、路径、参数  
->
-> 例如： https://www.baidu.com/s?wd=yuan     其中https是协议，www.baidu.com 是IP，端口默认80，/s是路径，参数是wd=yuan
->
-> 2. 请求方式: get与post请求
->
-> - GET提交的数据会放在URL之后，以?分割URL和传输数据，参数之间以&相连，如EditBook?name=test1&id=123456. POST方法是把提交的数据放在HTTP包的请求体中.
-> - GET提交的数据大小有限制（因为浏览器对URL的长度有限制），而POST方法提交的数据没有限制
->
-> 3. 响应状态码：状态码的职 是当客户端向服务器端发送请求时, 返回的请求 结果。借助状态码,用户可以知道服务器端是正常 理了请求,还是出 现了 。状态码如200 OK,以3位数字和原因 组成。
+1. 一个完整的URL包括：协议、ip、端口、路径、参数  
+
+```shell
+例如： https://www.baidu.com/s?wd=yuan     其中https是协议，www.baidu.com 是IP，端口默认80，/s是路径，参数是wd=yuan
+```
+
+2. 请求方式: get与post请求
+
+- GET提交的数据会放在URL之后，以?分割URL和传输数据，参数之间以&相连，如EditBook?name=test1&id=123456. POST方法是把提交的数据放在HTTP包的请求体中.
+- GET提交的数据大小有限制（因为浏览器对URL的长度有限制），而POST方法提交的数据没有限制
+
+3. 响应状态码：状态码的职 是当客户端向服务器端发送请求时, 返回的请求 结果。借助状态码,用户可以知道服务器端是正常 理了请求,还是出 现了 。状态码如200 OK,以3位数字和原因 组成。
 
 ## 1.3、quick start
 
@@ -723,9 +725,10 @@ func main() {
 
 ```go 
 {{/* a comment */}}   
-```
 
 > {/ 一定要紧贴
+
+```
 
 ## 4.3、Gin的模板函数
 
@@ -739,6 +742,7 @@ functionName [Argument...]
 
 Argument参数是可选的，如果有多个参数，参数直接用空格分隔。
 
+```go
 | 函数名   | 函数调用格式        | 对应关系运算         | 说明                                       |
 | :------- | :------------------ | :------------------- | :----------------------------------------- |
 | eq       | eq arg1 arg2        | arg1 == arg2         | arg1等于arg2则返回true                     |
@@ -753,7 +757,7 @@ Argument参数是可选的，如果有多个参数，参数直接用空格分隔
 | index    | index  arg 索引/键  | index x 2 即x[2]     | 每个被索引的主体必须是数组、切片或者字典   |
 | len      | len arg             | len x 即x的元素个数  | 用于计算数组大小                           |
 | urlquery | urlquery arg        | urlquery url         | 用于url编码                                |
-
+```
 #### （2）自定义模板函数
 
 视图部分：
